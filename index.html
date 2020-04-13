@@ -38,14 +38,15 @@
     </header>
     
     <main class="container">
+        <h1 class="visually-hidden">Магазин техники DEVICE</h1>
         <!-- Здесь должен быть слайдер -->
         <section class="slide">
-            <h3 class="visually-hidden">ТОП продаж</h3>
+            <h2 class="visually-hidden">ТОП продаж</h2>
             
             <div class="slide" id="slider1">
                 <img src="#" alt="палка для селфи">
                 <p class="slide-number">01</p>
-                <h3>Делай селфи,  как Бен Стиллер!</h3>
+                <h2>Делай селфи,  как Бен Стиллер!</h2>
                 <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь 
                     (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                 </p>
@@ -77,7 +78,7 @@
             <div class="slide" id="slider2">
                 <img src="#" alt="фитнес браслет">
                 <p class="slide-number">02</p>
-                <h3>Худеем правильно!!</h3>
+                <h2>Худеем правильно!!</h2>
                 <p>Мотивирующие фитнес-браслеты помогут найти в себе силы  не пропускать занятия 
                     и соблюдать диету
                 </p>
@@ -105,7 +106,7 @@
             <div class="slide" id="slider3">
                 <img src="#" alt="квадракоптер">
                 <p class="slide-number">03</p>
-                <h3>Порхает как бабочка, жалит как пчела!</h3>
+                <h2>Порхает как бабочка, жалит как пчела!</h2>
                 <p>Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным ла
                 </p>
 
@@ -133,9 +134,9 @@
 
         </section>
         <section class="popular">
-            <h3 class="visually-hidden">Популярное</h3>
+            <h2 class="visually-hidden">Популярное</h2>
             <ul class="popular-list">
-                z\
+                
                 <li class="popular-item">
                     <a href="#">
                         <img src="device/svg/popular-1.svg" title="Виртуальная реальность" alt="Виртуальная реальность">
@@ -181,14 +182,14 @@
         </section>
        <!-- Дальше должен быть слайдер -->
         <section class="service">
-            <h3 class="visually-hidden">Сервис</h3>
+            <h2 class="visually-hidden">Сервис</h2>
             <ul class="service-list">
                 <li class="service-item"><a href="#delivery">Доставка</a></li>
                 <li class="service-item"><a href="#warranty">Гарантия</a></li>
                 <li class="service-item"><a href="#credit">Кредит</a></li>
             </ul>
             <div id="delivery">
-                <h3>Доставка</h3>
+                <h2>Доставка</h2>
                 <p>
                     Мы с удовольствием доставим ваш товар прямо к вашему подъезду 
                     совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на Ваш этаж!
@@ -196,7 +197,7 @@
             </div>
             
             <div id="warranty">
-                <h3>Гарантия</h3>
+                <h2>Гарантия</h2>
                 <p>
                     Если из-за возгорания купленного у нас товара у вас сгорит дом - 
                     не переживайте, мы выдадим Вам новый. 
@@ -205,7 +206,7 @@
             </div>
 
             <div id="credit">
-                <h3>Кредит</h3>
+                <h2>Кредит</h2>
                 <p>
                     Залезть в долговую яму стало проще! Кредитные консультанты подберут
                     для вас наиболее выгодные условия кредита. Выгодные для нашего банка разумеется.
@@ -214,7 +215,7 @@
         </section>
 
         <section class="about-us">
-            <h3>О нас</h3>
+            <h2>О нас</h2>
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
             <p>Мы можем доставить ваш товар в самые отдаленные точки России! Device работает со многими транспортными компаниями.</p>
             <ul>
@@ -227,7 +228,7 @@
         </section>
         
         <section class="contacts">
-            <h3>Контакты</h3>
+            <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         
             <!-- Здесь должна быть карта -->
@@ -240,8 +241,11 @@
 
     <footer class="main-footer">
                 
-        <h3 class="visually-hidden">Контактная информация</h3>
-        <p>г. Москва, ул. Строителей, 15</p>
+        <a class="main-footer-logo">
+            <img src="#" width="#" height="#" alt="Логотип Device">
+        </a>
+
+        <p class="footer-contact">г. Москва, ул. Строителей, 15</p>
         
         <nav class="main-footer-navigation">
             <ul class="main-footer-navigation">
@@ -257,10 +261,8 @@
             </ul>
         </nav>
 
-        <h3 class="visually-hiden">Контактная информация</h3>
-        <p>Тел.: +7 (495) 495-95-95</p>
+        <p class="footer-contact">Тел.: +7 (495) 495-95-95</p>
           
-
         <div class="footer-social">
             <ul>
                 <li><a class="social-button" href="#"><img src="device/svg/fb.svg" alt="Фейсбук"></a></li>
@@ -276,35 +278,35 @@
     </footer>
 
         <section class="modal modal-login">
-            <h3>Личный кабинет</h3>
+            <h2>Личный кабинет</h2>
             <p>введи свой логин и пароль.</p>
             <!-- Здесь будет форма -->
             <span class="modal-close"><img src="device/svg/menu-close.svg" alt="Закрыть"></span>
         </section>
 
         <section class="modal modal-search">
-            <h3>Поиск по сайту</h3>
+            <h2>Поиск по сайту</h2>
             <p>введите запрос</p>
             <!-- Здесь будет форма -->
             <span class="modal-search"><img src="device/svg/menu-close.svg" alt="Закрыть"></span>
         </section>
 
         <section class="modal modal-compare">
-            <h3>Сравнить</h3>
+            <h2>Сравнить</h2>
             <p>Что-то сравнить</p>
             <!-- Здесь будет форма -->
             <span class="modal-compare"><img src="device/svg/menu-close.svg" alt="Закрыть"></span>
         </section>
 
         <section class="modal modal-basket">
-            <h3>Корзина</h3>
+            <h2>Корзина</h2>
             <p>Добавить в корзину</p>
             <!-- Здесь будет форма -->
             <span class="modal-close"><img src="device/svg/menu-close.svg" alt="Закрыть"></span>
         </section>
 
         <section class="modal modal-map">
-            <h3 class="visually-hidden">Как до нас добраться</h3>
+            <h2 class="visually-hidden">Как до нас добраться</h2>
             <span class="modal-close"><img src="device/svg/menu-close.svg" alt="Закрыть"></span>
         </section>
 </body>
