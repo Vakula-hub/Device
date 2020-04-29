@@ -1,0 +1,6 @@
+        li.catalog ul.submenu {
+        display: none;
+    }
+    li.catalog:hover ul.submenu {
+        display: block;
+    }
