@@ -188,7 +188,7 @@
                 <li class="service-item"><a href="#credit">Кредит</a></li>
             </ul>
             <div id="delivery">
-                <h3>Доставка</h3>
+                <h2>Доставка</h2>
                 <p>
                     Мы с удовольствием доставим ваш товар прямо к вашему подъезду 
                     совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на Ваш этаж!
@@ -200,7 +200,7 @@
             </div>
             
             <div id="warranty">
-                <h3>Гарантия</h3>
+                <h2>Гарантия</h2>
                 <p>
                     Если из-за возгорания купленного у нас товара у вас сгорит дом - 
                     не переживайте, мы выдадим Вам новый. 
@@ -212,7 +212,7 @@
             </div>
 
             <div id="credit">
-                <h3>Кредит</h3>
+                <h2>Кредит</h2>
                 <p>
                     Залезть в долговую яму стало проще! Кредитные консультанты подберут
                     для вас наиболее выгодные условия кредита. Выгодные для нашего банка разумеется.
@@ -258,7 +258,6 @@
         </section>
 
     <footer class="main-footer">
-                
         <a class="main-footer-logo">
             <img src="device\images\logo-footer.png" width="166" height="53" alt="Логотип Device">
         </a>
@@ -292,32 +291,66 @@
         <p class="footer-copyright">
             <a class="button" href="https://htmlacademy.ru/intensive/htmlcss"><img src="device/svg/logo-html.svg" alt="HTML Academy"></a>
         </p>
-
     </footer>
 
         <section class="modal modal-login">
-            <h2>Личный кабинет</h2>
-            <p>введи свой логин и пароль.</p>
-            <!-- Здесь будет форма -->
+            <h2 class="visually-hidden">Личный кабинет</h2>
+            <form>
+                <label>
+                    <input type="#" name="#">
+                </label>
+                
+            </form>
+           <!-- Здесь будет форма -->
+            <span class="modal-close"><img src="device/svg/menu-close.svg" alt="Закрыть"></span>
+        </section>
+        <section class="modal modal-write-us">
+            <h2 class="visually-hidden">Напишите нам</h2>
+            <form>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="user-field-id">Ваше имя:</label><br>
+                                <input id="user-field-id" type="text" name="username" value="Имя Фамилия">
+                            </td>
+                            <td>
+                                <label for="user-mail-id">Ваш email:</label><br>
+                                <input id="user-mail-id" type="text" name="usermail" value="email@example.com">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="user-letter-id">Текст письма:</label><br>
+                                <textarea id="user-letter-id" rows="auto" name="letertext">В свободной форме</textarea>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="Отправить"></td>
+                            <td></td>
+                        </tr>
+                    </table>                
+            </form>
+           <!-- Здесь будет форма -->
             <span class="modal-close"><img src="device/svg/menu-close.svg" alt="Закрыть"></span>
         </section>
 
         <section class="modal modal-search">
-            <h2>Поиск по сайту</h2>
+            <h2 class="visually-hidden">Поиск по сайту</h2>
             <p>введите запрос</p>
             <!-- Здесь будет форма -->
             <span class="modal-search"><img src="device/svg/menu-close.svg" alt="Закрыть"></span>
         </section>
 
         <section class="modal modal-compare">
-            <h2>Сравнить</h2>
+            <h2 class="visually-hidden">Сравнить</h2>
             <p>Что-то сравнить</p>
             <!-- Здесь будет форма -->
             <span class="modal-compare"><img src="device/svg/menu-close.svg" alt="Закрыть"></span>
         </section>
 
         <section class="modal modal-cart">
-            <h2>Корзина</h2>
+            <h2 class="visually-hidden">Корзина</h2>
             <p>Добавить в корзину</p>
             <!-- Здесь будет форма -->
             <span class="modal-close"><img src="device/svg/menu-close.svg" alt="Закрыть"></span>
