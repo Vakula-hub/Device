@@ -314,22 +314,22 @@
                         <tr>
                             <td>
                                 <label for="user-field-id">Ваше имя:</label><br>
-                                <input id="user-field-id" type="text" name="username" value="Имя Фамилия">
+                                <input id="user-field-id" type="text" name="username" placeholder="Имя Фамилия"><br>
                             </td>
                             <td>
                                 <label for="user-mail-id">Ваш email:</label><br>
-                                <input id="user-mail-id" type="text" name="usermail" value="email@example.com">
+                                <input id="user-mail-id" type="text" name="usermail" placeholder="email@example.com"><br>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <label for="user-letter-id">Текст письма:</label><br>
-                                <textarea id="user-letter-id" rows="auto" name="userletter">В свободной форме</textarea>
+                                <input id="user-letter-id" type="text" name="userletter" placeholder="В свободной форме" hight=100><br>
                             </td>
                             <td></td>
                         </tr>
                         <tr>
-                            <td><input type="submit" value="Отправить"></td>
+                            <td><label><input type="submit" value="Отправить"></label></td>
                             <td></td>
                         </tr>
                     </table>                
@@ -342,7 +342,7 @@
             <h2 class="visually-hidden">Поиск по сайту</h2>
             <form>
                 <label>
-                    <p>Введите запрос</p><input type="search" name="usersearch">
+                    <p>Введите запрос</p><input type="search" name="usersearch" autofocus><br>
                 </label>
             </form>
                      <!-- Здесь будет форма -->
