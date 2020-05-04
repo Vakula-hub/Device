@@ -105,7 +105,7 @@
             <div class="slide" id="slider3">
                 <img src="device\images\slider-3.png" alt="квадракоптер">
                 <p class="slide-number">03</p>
-                <h2>Порхает как бабочка, жалит как пчела!</h2>
+                <label for="slider3"><h2>Порхает как бабочка, жалит как пчела!</h2></label>
                 <p>Этот обычный, на первый взгляд, квадрокоптер оснащен  мощным ла
                 </p>
 
@@ -130,8 +130,9 @@
                     </tr>
                 </table>
             </div>
-
+        
         </section>
+
         <section class="popular">
             <h2 class="visually-hidden">Популярное</h2>
             <ul class="popular-list">
@@ -295,18 +296,20 @@
 
         <section class="modal modal-login">
             <h2 class="visually-hidden">Личный кабинет</h2>
-            <form>
+            <form action="#" method="GET">
                 <label>
-                    <input type="#" name="#">
+                    <p>Логин</p><input type="text" name="username" value="email или номер моб.тел."><br>
+                    <p>Пароль</p><input type="password" name="username" min="8"><br><br>
+                    <input type="submit" value="Вход"><br>
                 </label>
-                
             </form>
+           
            <!-- Здесь будет форма -->
             <span class="modal-close"><img src="device/svg/menu-close.svg" alt="Закрыть"></span>
         </section>
         <section class="modal modal-write-us">
             <h2 class="visually-hidden">Напишите нам</h2>
-            <form>
+            <form action="#" method="GET">
                     <table>
                         <tr>
                             <td>
@@ -321,7 +324,7 @@
                         <tr>
                             <td>
                                 <label for="user-letter-id">Текст письма:</label><br>
-                                <textarea id="user-letter-id" rows="auto" name="letertext">В свободной форме</textarea>
+                                <textarea id="user-letter-id" rows="auto" name="userletter">В свободной форме</textarea>
                             </td>
                             <td></td>
                         </tr>
