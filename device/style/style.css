@@ -57,15 +57,11 @@
     .user-navigation a:focus {
         color: #00000060;
     }
-    .catalog:hover,
-    .catalog:focus {
-        background-color: #f7e184   ;
-    }
-
-    /* делаем выпадающее меню */
+        /* делаем выпадающее меню */
     li.catalog ul.submenu {
         display: none;
     }
     li.catalog:hover ul.submenu {
         display: block;
+        background-color: #f7e184;
     }
