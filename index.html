@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Проект Device из HTML Academy</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
         <link href="device\style\style.css" rel="stylesheet">
+        <link href="device\style\normalize.css" rel="stylesheet">
     </head>
 <body>
     <header class="main-header">
@@ -18,12 +20,19 @@
                     </p>
                      <!-- Здесь должно быть выпадающее меню   -->
                     <ul class="submenu">
-                        <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
-                        <li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
-                        <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
-                        <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
-                        <li class="catalog-item"><a href="#">Умные часы</a></li>
-                        <li class="catalog-item"><a href="#">Квадракоптеры</a></li>
+                        <span class="block-1">
+                            <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
+                            <li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
+                            <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
+                        </span>
+                        <span class="block-2">
+                            <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
+                            <li class="catalog-item"><a href="#">Умные часы</a></li>
+                        </span>
+                        <span class="block-3">
+                            <li class="catalog-item"><a href="#">Квадракоптеры</a></li>
+                        </span>
+
                     </ul>
                 </li>
                 <li><a href="delivery.html">Доставка</a></li>
@@ -31,7 +40,7 @@
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <ul class="main-header-navigation user-navigation">
-                <li class="search">
+                <li class="search current">
                     <a class="search" href="search.html">Поиск по сайту</a>
                 </li>
                 <li class="login-link">
