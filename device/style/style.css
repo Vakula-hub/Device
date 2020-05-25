@@ -1,9 +1,9 @@
     body {
         margin: 0;
         padding: 0;
-        font-family: "Open Sans", "Arial", sans-serif;
+        font-family: "Open Sans Ligfht", "Arial", sans-serif;
         font-size: 15px;
-        font-weight: 100%;
+        font-weight: normal;
         line-height: 30px;
         color: #000000;
         background-color: #ffffff;
@@ -11,6 +11,58 @@
         background-position: top left;
         background-repeat: repeat;
     }
+    a {
+        text-decoration: none;
+    }
+    .main-header-navigation {
+        color: #000000;
+        background-color: #f7e296;
+    }
+    .main-header-navigation .site-navigation {
+        font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+        font-size: 18px;
+        font-weight: 100%;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+    .main-header-navigation .user-navigation {
+        font-family: "Open Sans", "Arial", sans-serif;
+        font-size: 15px;
+        font-weight: 100%;
+        line-height: 30px;
+    }
+    .submenu .catalog-item {
+        font-family: "Open Sans Light", "Arial", sans-serif;
+        font-size: 15px;
+        font-weight: normal;
+        line-height: 36px;
+        color: #000000;
+        text-transform: none;
+    }
+    /* отменяем маркеры */
+    .site-navigation,
+    .user-navigation,
+    .submenu {
+        list-style: none;
+    }
+    /* меняем цвет ссылкам */
+    .site-navigation a,
+    .user-navigation a {
+        color: #000000;
+    }
+    /* Делаем ссылки интерактивными */
+    .site-navigation a:hover,
+    .site-navigation a:focus,
+    .user-navigation a:hover,
+    .user-navigation a:focus {
+        color: #00000060;
+    }
+    .catalog:hover,
+    .catalog:focus {
+        background-color: #f7e184   ;
+    }
+
+    /* делаем выпадающее меню */
     li.catalog ul.submenu {
         display: none;
     }
