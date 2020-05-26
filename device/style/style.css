@@ -7,7 +7,7 @@
         line-height: 30px;
         color: #000000;
         background-color: #ffffff;
-        background-image: url("device\images\background.png");
+        background-image: url("/device/images/background.png");
         background-position: top left;
         background-repeat: repeat;
     }
@@ -57,6 +57,9 @@
     .user-navigation a:focus {
         color: #00000060;
     }
+    .search.current .search {
+        color: #00000060;
+    }
         /* делаем выпадающее меню */
     li.catalog ul.submenu {
         display: none;
@@ -64,4 +67,29 @@
     li.catalog:hover ul.submenu {
         display: block;
         background-color: #f7e184;
+    }
+    .slide h2 {
+        font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+        font-size: 47px;
+        font-weight: normal;
+        line-height: 56px;
+    }
+    .slide .slide-number {
+        font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+        font-size: 179.2px;
+        font-weight: normal;
+        line-height: 179.2px;
+        color: #ffffff;
+    }
+    .slide .slide-value td {
+        font-family: "Gilroy Light", "Arial", sans-serif;
+        font-size: 36px;
+        font-weight: normal;
+        line-height: 48px;
+    }
+    .slide .slide-feature td {
+        font-family: "Open Sans Light", "Arial", sans-serif;
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 20px;
     }
