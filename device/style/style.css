@@ -11,6 +11,7 @@
         background-position: top left;
         background-repeat: repeat;
     }
+    /* Размечаем Header */
     a {
         text-decoration: none;
     }
@@ -68,19 +69,54 @@
         display: block;
         background-color: #f7e184;
     }
+    /* Размечаем Main */
     .slide h2 {
         font-family: "Gilroy ExtraBold", "Arial", sans-serif;
         font-size: 47px;
         font-weight: normal;
         line-height: 56px;
     }
-    .slide .slide-number {
+    .slide a {
+        color: #000000;
+    }
+    .slide .details a {
+        font-family: "Gilroy", "Arial", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        position: absolute;
+        left: 783px; 
+        top: 553px;
+    }
+    /* Добавляем псевдоэлемент, рисуем линию */
+    .slide .layer::before {
+        content: " ";
+        background-color: #f0c52e;
+        position: absolute;
+        width: 220px;
+        height: 8px;
+        left: 740px;
+        top: 561px;
+    }
+    .slide:hover .layer::before {
+        display: block;
+        background-color: #f0c52e;
+        width: 220px;
+        height: 40px;
+        left: 740px;
+        top: 545px;
+    }
+        .slide .slide-number {
         font-family: "Gilroy ExtraBold", "Arial", sans-serif;
         font-size: 179.2px;
         font-weight: normal;
         line-height: 179.2px;
         color: #ffffff;
     }
+   
     .slide .slide-value td {
         font-family: "Gilroy Light", "Arial", sans-serif;
         font-size: 36px;
