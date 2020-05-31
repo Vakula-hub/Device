@@ -386,11 +386,48 @@
         left: 1140px;
         top: 820px;
     }
+    /* Размечаем секцию сервиса */
+    #warranty,
+    #credit {
+        display: none;
+    }
     .service-list {
         list-style: none;
     }
     .service a {
         color: #000000;
+    }
+    .service h2 {
+        font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+        font-size: 47px;
+        font-weight: bold;
+        line-height: 48px;
+        letter-spacing: 5px;
+        position: absolute;
+        top: 1221px;
+        left: 541px;
+    }
+    .service p.text {
+        width: 437px;
+        height: 158px;
+        position: absolute;
+        top: 1304px;
+        left: 540px;
+    }
+    .delivery p.image {
+        position: absolute;
+        top: 1227px;
+        right: 206px;
+    }
+    .warranty p.image {
+        position: absolute;
+        top: 1203px;
+        right: 186px;
+    }
+    .credit p.image {
+        position: absolute;
+        top: 1203px;
+        right: 210px;
     }
     .service-list {
         font-family: "Gilroy ExtraBold", "Arial", sans-serif;
@@ -456,7 +493,7 @@
         left: 140px;
         top: 1366px;
     }
-    li.service-item a.delivery::before {
+    .service ul.service-list::before {
         content: " ";
         background-color: #000000;
         position: absolute;
