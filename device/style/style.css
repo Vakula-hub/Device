@@ -225,7 +225,8 @@
         position: absolute;
         top: 228px;
         right: 187px;
-        color: #ffffff;
+        color: black;
+        /* z-index: 100; */
     }
     table {
         border-spacing: 81px 25px;
@@ -255,19 +256,22 @@
     .popular-list {
         list-style: none;
     }
+    .popular-list a {
+        color: #000000;
+    }
     .popular-list p {
         font-family: "Gilroy", "Arial", sans-serif;
         font-size: 18px;
         font-weight: bold;
         line-height: 24px;
-        position: absolute;
+        /* position: absolute; */
     }        
-    .popular-item-1  p {
+    .popular-item-1 p {
         position: absolute;
         left: 140px;
         top: 1012px;
     }
-    .popular-item-1 a {
+    .popular-item-1 a.image {
         position: absolute;
         left: 171px; 
         top: 872px;
@@ -287,7 +291,7 @@
         left: 340px;
         top: 1012px;
     }
-    .popular-item-2 a {
+    .popular-item-2 a.image {
         position: absolute;
         left: 378px; 
         top: 861px;
@@ -307,7 +311,7 @@
         left: 540px;
         top: 1012px;
     }
-    .popular-item-3 a {
+    .popular-item-3 a.image {
         position: absolute;
         left: 589px; 
         top: 858px;
@@ -322,12 +326,12 @@
         left: 540px;
         top: 820px;
     }
-    .popular-item-4  p {
+    .popular-item-4 p {
         position: absolute;
         left: 740px;
         top: 1012px;
     }
-    .popular-item-4 a {
+    .popular-item-4 a.image {
         position: absolute;
         left: 768px; 
         top: 870px;
@@ -342,12 +346,12 @@
         left: 740px;
         top: 820px;
     }
-    .popular-item-5  p {
+    .popular-item-5 p {
         position: absolute;
         left: 940px;
         top: 1012px;
     }
-    .popular-item-5 a {
+    .popular-item-5 a.image {
         position: absolute;
         left: 995px; 
         top: 852px;
@@ -362,12 +366,12 @@
         left: 940px;
         top: 820px;
     }
-    .popular-item-6  p {
+    .popular-item-6 p {
         position: absolute;
         left: 1140px;
         top: 1012px;
     }
-    .popular-item-6 a {
+    .popular-item-6 a.image {
         position: absolute;
         left: 1153px; 
         top: 869px;
@@ -381,4 +385,83 @@
         position: absolute;
         left: 1140px;
         top: 820px;
+    }
+    .service-list {
+        list-style: none;
+    }
+    .service a {
+        color: #000000;
+    }
+    .service-list {
+        font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        word-spacing: 52px;
+        position: absolute;
+        top: 1234px;
+        left: 163px;
+        text-align: center;
+    }
+    li.service-item a.delivery::after {
+        content: " ";
+        background-color: #f0c52e;
+        position: absolute;
+        width: 160px;
+        height: 8px;
+        top: 1238px;
+        left: 140px;
+    }
+    li.service-item:hover a.delivery::after {
+        display: block;
+        background-color: #f0c52e;
+        width: 160px;
+        height: 40px;
+        left: 140px;
+        top: 1238px;
+    }
+    li.service-item a.warranty::after {
+        content: " ";
+        background-color: #f0c52e;
+        position: absolute;
+        width: 160px;
+        height: 8px;
+        top: 1302px;
+        left: 140px;
+    }
+    li.service-item:hover a.warranty::after {
+        display: block;
+        background-color: #f0c52e;
+        width: 160px;
+        height: 40px;
+        left: 140px;
+        top: 1302px;
+    }
+    li.service-item a.credit::after {
+        content: " ";
+        background-color: #f0c52e;
+        position: absolute;
+        width: 160px;
+        height: 8px;
+        top: 1366px;
+        left: 140px;
+    }
+    li.service-item:hover a.credit::after {
+        display: block;
+        background-color: #f0c52e;
+        width: 160px;
+        height: 40px;
+        left: 140px;
+        top: 1366px;
+    }
+    li.service-item a.delivery::before {
+        content: " ";
+        background-color: #000000;
+        position: absolute;
+        width: 7px;
+        height: 319px;
+        top: 1142px;
+        left: 417px;
     }
