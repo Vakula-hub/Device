@@ -169,11 +169,15 @@
         font-size: 47px;
         font-weight: bold;
         line-height: 56px;
+        width: 560px;
+        height: 128px;
         /* position: absolute; */
         /* top: 318px;
         left: 739px; */
     }
     .slide .slide-text {
+        width: 557px;
+        height: 70px;
         /* position: absolute; */
         /* top: 448px;
         left: 739px; */
@@ -401,7 +405,7 @@
         font-size: 47px;
         font-weight: bold;
         line-height: 48px;
-        letter-spacing: 5px;
+        color: #000000;
         /* position: absolute; */
         /* top: 1221px;
         left: 541px; */
@@ -409,6 +413,7 @@
     .service p.text {
         width: 437px;
         height: 158px;
+        color: #464646;
         /* position: absolute; */
         /* top: 1304px;
         left: 540px; */
@@ -492,6 +497,7 @@
         /* left: 140px;
         top: 1366px; */
     }
+    /* Вертикальная линия */
     .service ul.service-list::before {
         content: " ";
         background-color: #000000;
@@ -501,6 +507,7 @@
         /* top: 1142px;
         left: 417px; */
     }
+    /* Подложка на всю ширину */
     .service::before {
         content: " ";
         background-color: #cccccc;
@@ -533,9 +540,79 @@
         left: 740px; */
     }
     .partners-logo .logo-4 {
-        opacity: 20%;
+        opacity: 20%; /* необходимо добавить черно-белый цвет */
         /* position: absolute; */
         /* top: 1624px;
         left: 1037px; */
     }
-    
+    /* размечаем контактную  информацию */
+    .about-us ul{
+        list-style: none;
+        text-align: left;
+    }
+
+    .about-us h2 {
+        font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+        font-size: 47px;
+        font-weight: bold;
+        line-height: 48px;
+        width: 132px;
+        height: 52px;
+    }
+    .about-us .about-us{
+        width: 463px;
+        height: 317px;
+        color: #464646;
+    }
+    .about-us .details-about-us {
+        font-family: "Gilroy ExtraBold", "Arial", sans;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    .about-us .details-about-us::before {
+        content: "";
+        background-color: #f0c52e;
+        width:  260px;
+        height: 8px;
+        position: absolute;
+    }
+    .about-us:hover .details-about-us::before {
+        display: block;
+        width:  260px;
+        height: 40px;
+    }
+    .contacts h2 {
+        font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+        font-size: 47px;
+        font-weight: bold;
+        line-height: 48px;
+        width: 220px;
+        height: 52px;
+    }
+    .contacts p.text {
+        color: #464646;
+        width: 562px;
+        height: 89px;
+    }
+    .contacts .write-us {
+        font-family: "Gilroy ExtraBold", "Arial", sans;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+    .contacts .write-us::before {
+        content: "";
+        background-color: #f0c52e;
+        width:  260px;
+        height: 8px;
+        position: absolute;
+    }
+    .contacts:hover .write-us::before {
+        display: block;
+        width:  260px;
+        height: 40px;
