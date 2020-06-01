@@ -20,19 +20,18 @@
     }
     div.navigation {
         background-color: #f7e296;
-        position: absolute;
+        /* /* position: absolute; */ */
         width: 1160px;
         height: 299px;
-        top: 50px;
-        left: 140px;
-        /* opacity: initial; */
+        /* top: 50px; */
+        /* left: 140px; */
     }
     .main-header-navigation .main-header-logo {
         width: 168px;
         height: 47px;
-        position: absolute;
-        top: 17px;
-        left: 200px;
+        /* position: absolute; */
+        /* top: 17px;
+        left: 200px; */
         z-index: 1;
     }
     .main-header-navigation .site-navigation {
@@ -57,21 +56,21 @@
         text-transform: none;
     }
     .submenu .block-1 {
-        position: absolute;
+        /* position: absolute; */
         top: 210px;
         left: 200px;
         z-index: 1;
     }
     .submenu .block-2 {
-        position: absolute;
-        top: 210px;
-        left: 439px;
+        /* position: absolute; */
+        /* top: 210px;
+        left: 439px; */
         z-index: 1;
     }
     .submenu .block-3 {
-        position: absolute;
-        top: 210px;
-        left: 639px;
+        /* position: absolute; */
+        /* top: 210px;
+        left: 639px; */
         z-index: 1;
     }
     /* отменяем маркеры */
@@ -94,44 +93,44 @@
     }
     .main-header-navigation .search.current .search {
         color: #00000060;
-        position: absolute;
-        top: 53px;
-        left: 238px;
+        /* position: absolute; */
+        /* top: 53px;
+        left: 238px; */
     }
     .main-header-navigation .login-link .login-link {
-        position: absolute;
-        top: 53px;
-        left: 626px;
+        /* position: absolute; */
+        /* top: 53px;
+        left: 626px; */
     }
     .main-header-navigation .compare .compare {
-        position: absolute;
-        top: 53px;
-        left: 927px;
+        /* position: absolute; */
+        /* top: 53px;
+        left: 927px; */
     }
     .main-header-navigation .cart .cart {
-        position: absolute;
-        top: 53px;
-        left: 1040px;
+        /* position: absolute; */
+        /* top: 53px;
+        left: 1040px; */
     }
     .main-header-navigation .catalog .catalog {
-        position: absolute;
-        top: 158px;
-        left: 199px;
+        /* position: absolute; */
+        /* top: 158px;
+        left: 199px; */
     }
     .main-header-navigation .delivery .delivery {
-        position: absolute;
-        top: 158px;
-        left: 740px;
+        /* position: absolute; */
+        /* top: 158px;
+        left: 740px; */
     }
     .main-header-navigation .warranty .warranty {
-        position: absolute;
-        top: 158px;
-        left: 898px;
+        /* position: absolute; */
+        /* top: 158px;
+        left: 898px; */
     }
     .main-header-navigation .contacts .contacts {
-        position: absolute;
-        top: 158px;
-        left: 1121px;
+        /* position: absolute; */
+        /* top: 158px;
+        left: 1121px; */
     }
     .submenu {
         background-color:#f7e184;
@@ -149,40 +148,40 @@
     /* Размечаем Main */
     .slide-navigation .current1 {
         list-style: none;
-        position: absolute;
-        top: 555px;
-        right: 289px;
+        /* position: absolute; */
+        /* top: 555px;
+        right: 289px; */
     }
     .slide-navigation .current2 {
         list-style: none;
-        position: absolute;
-        top: 555px;
-        right: 256px;
+        /* position: absolute; */
+        /* top: 555px;
+        right: 256px; */
     }
     .slide-navigation .current3 {
         list-style: none;
-        position: absolute;
-        top: 555px;
-        right: 223px;
+        /* position: absolute; */
+        /* top: 555px;
+        right: 223px; */
     }
     .slide h2 {
         font-family: "Gilroy", "Arial", sans-serif;
         font-size: 47px;
         font-weight: bold;
         line-height: 56px;
-        position: absolute;
-        top: 318px;
-        left: 739px;
+        /* position: absolute; */
+        /* top: 318px;
+        left: 739px; */
     }
     .slide .slide-text {
-        position: absolute;
-        top: 448px;
-        left: 739px;
+        /* position: absolute; */
+        /* top: 448px;
+        left: 739px; */
     }
     .slide img {
-        position: absolute;
-        top: 240px;
-        left: 256px;
+        /* position: absolute; */
+        /* top: 240px;
+        left: 256px; */
     }
     .slide a {
         color: #000000;
@@ -195,36 +194,36 @@
         text-align: center;
         letter-spacing: 5px;
         text-transform: uppercase;
-        position: absolute;
-        left: 783px; 
-        top: 553px;
+        /* position: absolute; */
+        /* left: 783px; 
+        top: 553px; */
     }
     /* Добавляем псевдоэлемент, рисуем линию */
     .slide .layer::before {
         content: " ";
         background-color: #f0c52e;
-        position: absolute;
+        /* position: absolute; */
         width: 220px;
         height: 8px;
-        left: 740px;
-        top: 561px;
+        /* left: 740px;
+        top: 561px; */
     }
     .slide:hover .layer::before {
         display: block;
         background-color: #f0c52e;
         width: 220px;
         height: 40px;
-        left: 740px;
-        top: 545px;
+        /* left: 740px;
+        top: 545px; */
     }
     .slide p.slide-number {
         font-family: "Gilroy ExtraBold", "Arial", sans-serif;
         font-size: 179.2px;
         font-weight: normal;
         line-height: 179.2px;
-        position: absolute;
-        top: 228px;
-        right: 187px;
+        /* position: absolute; */
+        /* top: 228px;
+        right: 187px; */
         color: black;
         /* z-index: 100; */
     }
@@ -236,18 +235,18 @@
         font-size: 36px;
         font-weight: normal;
         line-height: 48px;
-        position: absolute;
-        top: 641px;
-        left: 739px;
+        /* position: absolute; */
+        /* top: 641px;
+        left: 739px; */
     }
     .slide .slide-feature td {
         font-family: "Open Sans Light", "Arial", sans-serif;
         font-size: 13px;
         font-weight: normal;
         line-height: 20px;
-        position: absolute;
-        top: 692px;
-        left: 740px;
+        /* position: absolute; */
+        /* top: 692px;
+        left: 740px; */
     }
     #slider2, #slider3 {
         display: none;
@@ -264,17 +263,17 @@
         font-size: 18px;
         font-weight: bold;
         line-height: 24px;
-        /* position: absolute; */
+        /* /* position: absolute; */ */
     }        
     .popular-item-1 p {
-        position: absolute;
-        left: 140px;
-        top: 1012px;
+        /* position: absolute; */
+        /* left: 140px;
+        top: 1012px; */
     }
     .popular-item-1 a.image {
-        position: absolute;
-        left: 171px; 
-        top: 872px;
+        /* position: absolute; */
+        /* left: 171px; 
+        top: 872px; */
     }
     .popular-item-1::before {
         content: " ";
@@ -282,59 +281,59 @@
         background-color: #f7e296;
         width: 160px;
         height: 160px;
-        position: absolute;
-        left: 140px;
-        top: 820px;
+        /* position: absolute; */
+        /* left: 140px;
+        top: 820px; */
         }
     .popular-item-2  p {
-        position: absolute;
-        left: 340px;
-        top: 1012px;
+        /* position: absolute; */
+        /* left: 340px;
+        top: 1012px; */
     }
     .popular-item-2 a.image {
-        position: absolute;
-        left: 378px; 
-        top: 861px;
+        /* position: absolute; */
+        /* left: 378px; 
+        top: 861px; */
     }
     .popular-item-2::before {
         content: " ";
         background-image: url("/device/images/Layer-popular.png");
         background-color: #f7e296;
-        width: 160px;
-        height: 160px;
-        position: absolute;
-        left: 340px;
-        top: 820px;
+        /* width: 160px;
+        height: 160px; */
+        /* position: absolute; */
+        /* left: 340px;
+        top: 820px; */
     }
     .popular-item-3  p {
-        position: absolute;
-        left: 540px;
-        top: 1012px;
+        /* position: absolute; */
+        /* left: 540px;
+        top: 1012px; */
     }
     .popular-item-3 a.image {
-        position: absolute;
-        left: 589px; 
-        top: 858px;
+        /* position: absolute; */
+        /* left: 589px; 
+        top: 858px; */
     }
     .popular-item-3::before {
         content: " ";
         background-image: url("/device/images/Layer-popular.png");
         background-color: #f7e296;
-        width: 160px;
-        height: 160px;
-        position: absolute;
-        left: 540px;
-        top: 820px;
+        /* width: 160px;
+        height: 160px; */
+        /* position: absolute; */
+        /* left: 540px;
+        top: 820px; */
     }
     .popular-item-4 p {
-        position: absolute;
-        left: 740px;
-        top: 1012px;
+        /* position: absolute; */
+        /* left: 740px;
+        top: 1012px; */
     }
     .popular-item-4 a.image {
-        position: absolute;
-        left: 768px; 
-        top: 870px;
+        /* position: absolute; */
+        /* left: 768px; 
+        top: 870px; */
     }
     .popular-item-4::before {
         content: " ";
@@ -342,39 +341,39 @@
         background-color: #f7e296;
         width: 160px;
         height: 160px;
-        position: absolute;
-        left: 740px;
-        top: 820px;
+        /* position: absolute; */
+        /* left: 740px;
+        top: 820px; */
     }
     .popular-item-5 p {
-        position: absolute;
-        left: 940px;
-        top: 1012px;
+        /* position: absolute; */
+        /* left: 940px;
+        top: 1012px; */
     }
     .popular-item-5 a.image {
-        position: absolute;
-        left: 995px; 
-        top: 852px;
+        /* position: absolute; */
+        /* left: 995px; 
+        top: 852px; */
     }
     .popular-item-5::before {
         content: " ";
         background-image: url("/device/images/Layer-popular.png");
         background-color: #f7e296;
-        width: 160px;
-        height: 160px;
-        position: absolute;
-        left: 940px;
-        top: 820px;
+        /* width: 160px;
+        height: 160px; */
+        /* position: absolute; */
+        /* left: 940px;
+        top: 820px; */
     }
     .popular-item-6 p {
-        position: absolute;
-        left: 1140px;
-        top: 1012px;
+        /* position: absolute; */
+        /* left: 1140px;
+        top: 1012px; */
     }
     .popular-item-6 a.image {
-        position: absolute;
-        left: 1153px; 
-        top: 869px;
+        /* position: absolute; */
+        /* left: 1153px; 
+        top: 869px; */
     }
     .popular-item-6::before {
         content: " ";
@@ -382,9 +381,9 @@
         background-color: #f7e296;
         width: 160px;
         height: 160px;
-        position: absolute;
-        left: 1140px;
-        top: 820px;
+        /* position: absolute; */
+        /* left: 1140px;
+        top: 820px; */
     }
     /* Размечаем секцию сервиса */
     #warranty,
@@ -403,31 +402,31 @@
         font-weight: bold;
         line-height: 48px;
         letter-spacing: 5px;
-        position: absolute;
-        top: 1221px;
-        left: 541px;
+        /* position: absolute; */
+        /* top: 1221px;
+        left: 541px; */
     }
     .service p.text {
         width: 437px;
         height: 158px;
-        position: absolute;
-        top: 1304px;
-        left: 540px;
+        /* position: absolute; */
+        /* top: 1304px;
+        left: 540px; */
     }
     .delivery p.image {
-        position: absolute;
-        top: 1227px;
-        right: 206px;
+        /* position: absolute; */
+        /* top: 1227px;
+        right: 206px; */
     }
     .warranty p.image {
-        position: absolute;
-        top: 1203px;
-        right: 186px;
+        /* position: absolute; */
+        /* top: 1203px;
+        right: 186px; */
     }
     .credit p.image {
-        position: absolute;
-        top: 1203px;
-        right: 210px;
+        /* position: absolute; */
+        /* top: 1203px;
+        right: 210px; */
     }
     .service-list {
         font-family: "Gilroy ExtraBold", "Arial", sans-serif;
@@ -437,68 +436,106 @@
         text-transform: uppercase;
         letter-spacing: 5px;
         word-spacing: 52px;
-        position: absolute;
-        top: 1234px;
-        left: 163px;
+        /* position: absolute; */
+        /* top: 1234px;
+        left: 163px; */
         text-align: center;
     }
-    li.service-item a.delivery::after {
+    li.service-item a.delivery::before {
         content: " ";
         background-color: #f0c52e;
-        position: absolute;
+        /* position: absolute; */
         width: 160px;
         height: 8px;
-        top: 1238px;
-        left: 140px;
+        /* top: 1238px;
+        left: 140px; */
     }
-    li.service-item:hover a.delivery::after {
+    li.service-item:hover a.delivery::before {
         display: block;
         background-color: #f0c52e;
         width: 160px;
         height: 40px;
-        left: 140px;
-        top: 1238px;
+        /* left: 140px;
+        top: 1238px; */
     }
-    li.service-item a.warranty::after {
+    li.service-item a.warranty::before {
         content: " ";
         background-color: #f0c52e;
-        position: absolute;
+        /* position: absolute; */
         width: 160px;
         height: 8px;
-        top: 1302px;
-        left: 140px;
+        /* top: 1302px;
+        left: 140px; */
     }
-    li.service-item:hover a.warranty::after {
+    li.service-item:hover a.warranty::before {
         display: block;
         background-color: #f0c52e;
         width: 160px;
         height: 40px;
-        left: 140px;
-        top: 1302px;
+        /* left: 140px;
+        top: 1302px; */
     }
-    li.service-item a.credit::after {
+    li.service-item a.credit::before {
         content: " ";
         background-color: #f0c52e;
-        position: absolute;
+        /* position: absolute; */
         width: 160px;
         height: 8px;
-        top: 1366px;
-        left: 140px;
+        /* top: 1366px;
+        left: 140px; */
     }
-    li.service-item:hover a.credit::after {
+    li.service-item:hover a.credit::before {
         display: block;
         background-color: #f0c52e;
         width: 160px;
         height: 40px;
-        left: 140px;
-        top: 1366px;
+        /* left: 140px;
+        top: 1366px; */
     }
     .service ul.service-list::before {
         content: " ";
         background-color: #000000;
-        position: absolute;
+        /* position: absolute; */
         width: 7px;
         height: 319px;
-        top: 1142px;
-        left: 417px;
+        /* top: 1142px;
+        left: 417px; */
     }
+    .service::before {
+        content: " ";
+        background-color: #cccccc;
+        /* position: absolute; */
+        width: 1445px;
+        height: 288px;
+        /* top: 1242px;
+        left: 0px; */
+    }
+    /* Размечаем логотипы партнеров */
+    .partners-logo {
+        list-style: none;
+    }
+    .partners-logo .logo-1 {
+        opacity: 20%;
+        /* position: absolute; */
+        /* top: 1624px;
+        left: 140px; */
+    }
+    .partners-logo .logo-2 {
+        opacity: 20%;
+        /* position: absolute; */
+        /* top: 1624px;
+        left: 440px; */
+    }
+    .partners-logo .logo-3 {
+        opacity: 20%;
+        /* position: absolute; */
+        /* top: 1624px;
+        left: 740px; */
+    }
+    .partners-logo .logo-4 {
+        opacity: 20%;
+        /* position: absolute; */
+        /* top: 1624px;
+        left: 1037px; */
+    }
+    
