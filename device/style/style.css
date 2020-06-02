@@ -20,7 +20,7 @@
     }
     div.navigation {
         background-color: #f7e296;
-        /* /* position: absolute; */ */
+        /* /* position: absolute; */
         width: 1160px;
         height: 299px;
         /* top: 50px; */
@@ -267,7 +267,7 @@
         font-size: 18px;
         font-weight: bold;
         line-height: 24px;
-        /* /* position: absolute; */ */
+        /* position: absolute; */
     }        
     .popular-item-1 p {
         /* position: absolute; */
@@ -616,3 +616,52 @@
         display: block;
         width:  260px;
         height: 40px;
+    }
+
+    /* Размечаем FOOTER  */
+.main-footer ul {
+    list-style: none;
+}
+.main-footer a {
+    color: #ffffff;
+}
+.main-footer {
+    color: #ffffff;
+    background-color: #464646;
+    background-image: url("\device\images\background-footer.png");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+.main-footer .footer-contact-adress,
+.main-footer .footer-contact-tel {
+    width: 261px;
+    height: 22px;
+}
+.main-footer-navigation .main-footer-navigation{
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    width: 124px;
+    height: 20px;
+}
+.user-footer-navigation .user-navigation {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 36px;
+    width: 120px;
+    height: 16px;
+}
+.main-footer .footer-social {
+    opacity: 30%;
+}
+.main-footer .footer-copyright::before {
+    content: " ";
+    background-color: #ffcc00;
+    width: 80px;
+    height: 7px;
+    position: absolute;
+}
