@@ -398,6 +398,7 @@
         list-style: none;
     }
     .service a {
+        text-decoration: none;
         color: #000000;
     }
     .service h2 {
@@ -664,4 +665,34 @@
     width: 80px;
     height: 7px;
     position: absolute;
+}
+
+/* Стилизация модальных окон */
+.modal {
+    /* list-style: none; */
+    background-color: #ffffff;
+    background-color: transparent;
+    border: none;
+}
+.modal .write-us {
+    width: 960px;
+    height: 553px;
+}
+.modal fieldset {
+   border-color: #d9d9d9;
+   /* border-bottom-style: dotted; */
+   border-top: none;
+}
+.modal input,
+.modal textarea {
+    border: none;
+    background-color: #f2f2f2;
+}
+.write-us input {
+    width: 360px;
+    height: 50px
+}
+.write-us textarea {
+    width: 760px;
+    height: 156px;
 }
