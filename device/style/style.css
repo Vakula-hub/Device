@@ -669,24 +669,20 @@
 
 /* Стилизация модальных окон */
 .modal {
-    /* list-style: none; */
+    list-style: none;
     background-color: #ffffff;
     background-color: transparent;
-    border: none;
-}
-.modal .write-us {
-    width: 960px;
-    height: 553px;
-}
-.modal fieldset {
-   border-color: #d9d9d9;
-   /* border-bottom-style: dotted; */
-   border-top: none;
 }
 .modal input,
 .modal textarea {
     border: none;
     background-color: #f2f2f2;
+}
+.modal fieldset {
+    width: 960px;
+    height: 553px;
+    border: none;
+    box-shadow: 10px 10px 20px #00000020, -10px 10px 20px #00000020;
 }
 .write-us input {
     width: 360px;
@@ -695,4 +691,22 @@
 .write-us textarea {
     width: 760px;
     height: 156px;
+}
+.modal table {
+    border-spacing: 40px;
+}
+
+}
+[text] {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+    color: #464646;
+}
+.write-us label {
+    font-family: "Gilroly ExtraBold", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
 }
