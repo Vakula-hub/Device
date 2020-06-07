@@ -214,8 +214,6 @@
     }
     .slide:hover .layer::before {
         display: block;
-        background-color: #f0c52e;
-        width: 220px;
         height: 40px;
         /* left: 740px;
         top: 545px; */
@@ -458,8 +456,6 @@
     }
     li.service-item:hover a.delivery::before {
         display: block;
-        background-color: #f0c52e;
-        width: 160px;
         height: 40px;
         /* left: 140px;
         top: 1238px; */
@@ -475,8 +471,6 @@
     }
     li.service-item:hover a.warranty::before {
         display: block;
-        background-color: #f0c52e;
-        width: 160px;
         height: 40px;
         /* left: 140px;
         top: 1302px; */
@@ -492,8 +486,6 @@
     }
     li.service-item:hover a.credit::before {
         display: block;
-        background-color: #f0c52e;
-        width: 160px;
         height: 40px;
         /* left: 140px;
         top: 1366px; */
@@ -582,7 +574,6 @@
     }
     .about-us:hover .details-about-us::before {
         display: block;
-        width:  260px;
         height: 40px;
     }
     .contacts h2 {
@@ -615,7 +606,6 @@
     }
     .contacts:hover .write-us::before {
         display: block;
-        width:  260px;
         height: 40px;
     }
 
@@ -672,6 +662,22 @@
     list-style: none;
     background-color: #ffffff;
     background-color: transparent;
+    font-family: "Gilroy ExtraBold", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+}
+.modal a {
+    color: #000000;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 18px;
+}
+.modal a:hover,
+.modal a:focus {
+    color: darkred;
+    font-weight: bold;
 }
 .modal input,
 .modal textarea {
@@ -695,18 +701,80 @@
 .modal table {
     border-spacing: 40px;
 }
-
-}
-[text] {
+[placeholder] {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: normal;
     line-height: 18px;
     color: #464646;
 }
-.write-us label {
-    font-family: "Gilroly ExtraBold", "Arial", sans-serif;
-    font-size: 18px;
+.write-us-form .button {
+    font: inherit;
+    background-color: #ffffff;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border: none;
+}
+.write-us-form .button::before {
+    content: " ";
+    width: 200px;
+    height: 8px;
+    background-color: #f0c52e;
+    position: absolute;
+}
+.write-us-form:hover .button::before {
+    height: 40px;
+}
+.login-form {
+    background-color: inherit;
+    width: 280px;
+    height: 230px;
+    box-shadow: 10px 10px 20px #00000020, -10px 10px 20px #00000020;
+}
+.login .login-checkbox {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
     font-weight: bold;
-    line-height: 24px;
+    line-height: 18px;
+    color: #464646;
+}
+.login .button {
+    font: inherit;
+    background-color: #ffffff;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border: none;
+}
+.login .button::before {
+    content: " ";
+    width: 200px;
+    height: 8px;
+    background-color: #f0c52e;
+    position: absolute;
+}
+.login:hover .button::before {
+    height: 40px;
+}
+.modal .search {
+    background-color: inherit;
+    width: 280px;
+    height: 120px;
+    box-shadow: 10px 10px 20px #00000020, -10px 10px 20px #00000020;
+}
+.search .button {
+    font: inherit;
+    background-color: #ffffff;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    border: none;
+}
+.search .button::before {
+    content: " ";
+    width: 200px;
+    height: 8px;
+    background-color: #f0c52e;
+    position: absolute;
+}
+.search:hover .button::before {
+    height: 40px;
 }
