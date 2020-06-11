@@ -352,23 +352,25 @@
         <section class="modal modal-login">
             <h2 class="visually-hidden">Личный кабинет</h2>
             <form class="login-form" action="#" method="POST">
-                <p>
-                    <label class="icon-user" for="login">Логин</label><br>
-                    <input class="login-icon-user" id="login" type="text" name="login" placeholder="email или номер моб.тел.">
-                </p>
-                <p>
-                    <label class="icon-password" for="password">Пароль</label><br>
-                    <input class="login-icon-password" id="password" type="password" name="password" placeholder="Пароль минимум 8 знаков" min=8>
-                </p>
-                <p class="login-password-info">
-                    <label class="login-checkbox"> <!--Контейнер для будующей иконки выбора-->
+                <div class="login">
+                    <p>
+                        <label class="icon-user" for="login">Логин</label><br>
+                        <input class="login-icon-user" id="login" type="text" name="login" placeholder="email или номер моб.тел." size="24">
+                    </p>
+                    <p>
+                        <label class="icon-password" for="password">Пароль</label><br>
+                        <input class="login-icon-password" id="password" type="password" name="password" placeholder="Пароль минимум 8 знаков" size="24" min=8>
+                    </p>
+                    <p class="login-password-info">
+                        <label class="login-checkbox"> <!--Контейнер для будующей иконки выбора-->
                         <input class="visyally-hidden" type="checkbox" name="remember">
                         <span class="checkbox-indicator"></span>
                         Запомните меня
-                    </label>
-                    <a class="restiore" href="#">Я забыл пароль</a>
-                </p>
+                        </label>
+                        <a class="restore" href="#">Я забыл пароль</a>
+                    </p>
                     <button class="button" type="submit">Вход</button>
+                </div>
             </form>
             <!-- Здесь будет форма -->
             <button class="modal-close" type="button">Закрыть</button>
@@ -415,14 +417,16 @@
         </fieldset>
         </div>
         </section>
-
         <section class="modal modal-search">
             <h2 class="visually-hidden">Поиск по сайту</h2>
             <form>
-                <p>
-                    <label class="visually-hidden" for="user-search">Введите запрос</label>
-                    <input id="user-search" type="search" name="usersearch">
-                </p>
+                <div class="search">
+                    <p>
+                        <label class="user-search" for="user-search">Введите запрос</label><br>
+                        <input id="user-search" type="search" name="usersearch" size="24" placeholder="Что ищем?">
+                    </p>
+                    <button class="button" type="submit">Найти</button>
+                </div>
             </form>
             <!-- Здесь будет форма -->
             <button class="modal-close" type="button">Закрыть</button>
