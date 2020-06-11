@@ -91,11 +91,19 @@
     .user-navigation a:focus {
         color: #00000060;
     }
-    .main-header-navigation .search.current .search {
-        color: #00000060;
+    .search.current .search {
+        color: #00000030;
         /* position: absolute; */
         /* top: 53px;
         left: 238px; */
+    }
+    .search.current .search:hover,
+    .search.current .search:focus {
+        color: #00000060;
+    }
+    .site-navigation a:active,
+    .user-navigation a:active {
+        color: #00000030
     }
     .main-header-navigation .login-link .login-link {
         /* position: absolute; */
@@ -511,29 +519,81 @@
         left: 0px; */
     }
     /* Размечаем логотипы партнеров */
-    .partners-logo {
+    .partners-logo ul {
         list-style: none;
     }
     .partners-logo .logo-1 {
+        display: block;
+        filter: sepia(100%); /* МЕНЯЕТ ЦВЕТ */
+        background-color: #ffffff;
         opacity: 20%;
         /* position: absolute; */
         /* top: 1624px;
         left: 140px; */
     }
+    .partners-logo .logo-1:hover, 
+    .partners-logo .logo-1:focus {
+        display: block;
+        filter: sepia(0%);
+        background-color: #ffffff;
+        opacity: 100%;
+        /* position: absolute; */
+        /* top: 1624px;
+        left: 140px; */
+    }
     .partners-logo .logo-2 {
+        display: block;
+        filter: sepia(100%);
+        background-color: #ffffff;
         opacity: 20%;
         /* position: absolute; */
         /* top: 1624px;
         left: 440px; */
     }
+    .partners-logo .logo-2:hover, 
+    .partners-logo .logo-2:focus {
+        display: block;
+        filter: sepia(0%);
+        background-color: #ffffff;
+        opacity: 100%;
+        /* position: absolute; */
+        /* top: 1624px;
+        left: 440px; */
+    }
     .partners-logo .logo-3 {
+        display: block;
+        filter: sepia(100%);
+        background-color: #ffffff;
         opacity: 20%;
         /* position: absolute; */
         /* top: 1624px;
         left: 740px; */
     }
+    .partners-logo .logo-3:hover, 
+    .partners-logo .logo-3:focus {
+        display: block;
+        filter: sepia(0%);
+        background-color: #ffffff;
+        opacity: 100%;
+        /* position: absolute; */
+        /* top: 1624px;
+        left: 740px; */
+    }
     .partners-logo .logo-4 {
-        opacity: 20%; /* необходимо добавить черно-белый цвет */
+        display: block;
+        filter: sepia(100%);
+        background-color: #ffffff;
+        opacity: 20%;
+        /* position: absolute; */
+        /* top: 1624px;
+        left: 1037px; */
+    }
+    .partners-logo .logo-4:hover, 
+    .partners-logo .logo-4:focus {
+        display: block;
+        filter: sepia(0%);
+        background-color: #ffffff;
+        opacity: 100%;
         /* position: absolute; */
         /* top: 1624px;
         left: 1037px; */
@@ -757,24 +817,26 @@
 }
 .modal .search {
     background-color: inherit;
-    width: 280px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     box-shadow: 10px 10px 20px #00000020, -10px 10px 20px #00000020;
 }
 .search .button {
-    font: inherit;
+    font-family: "Opoen Sans", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 30px;
     background-color: #ffffff;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    border: none;
+    width: 85px;
+    height: 49px;
+    border: 2px solid #000000;
 }
-.search .button::before {
-    content: " ";
-    width: 200px;
-    height: 8px;
-    background-color: #f0c52e;
-    position: absolute;
+.search .button:hover,
+.search .button:focus {
+    color:#ffffff;
+    background-color: #000000;
 }
-.search:hover .button::before {
-    height: 40px;
+.search .button:active {
+    color: #ffffff70;
+    background-color: #000000;
 }
