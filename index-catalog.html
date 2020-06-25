@@ -7,7 +7,7 @@
         <link href="device\style\style.css" rel="stylesheet">
         <link href="device\style\normalize.css" rel="stylesheet">
     </head>
-<body>
+<body class="inner-page">
     <header class="main-header">
         <nav class="main-header-navigation">
             <a class="main-header-logo" href="index.html">
@@ -83,64 +83,72 @@
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <ul class="main-filters">
-                <li class="main-filters filter">
-                    <p>Фильтр</p>
-                    <form class="filter" action="#" oninput="priceoutput.value=pricecount.value" method="GET">
-                        <fieldset>
+                <li class="main-filters-filter">
+                    <p class="filter">Фильтр:</p>
+                         <fieldset>
                             <legend>Стоимость</legend>
-                            <p>
-                                <output name="priceoutput">0</output>
-                                <input type="range" name="priceoutput" min="0" max="100000" step="100">                                
-                            </p>                                
+                                <form class="filter" action="#" oninput="priceoutput.value=pricecount.value" method="GET">
+                                    <p>
+                                    <output name="priceoutput">0</output>
+                                    <input type="range" name="priceoutput" min="0" max="100000" step="100">                                
+                                    </p>
+                                </form>                   
                         </fieldset>        
                         <fieldset>
                             <legend>Цвет</legend>
+                            <form>
                             <ul>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Черный" id="Черный" checked>
+                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="Черный" id="Черный" checked>
                                     <label for="Черный">Черный</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Белый" id="Белый">
+                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="Белый" id="Белый">
                                     <label for="Белый">Белый</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Синий" id="Синий" checked>
+                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="Синий" id="Синий" checked>
                                     <label for="Синий">Синий</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Красный" id="Красный" checked>
+                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="Красный" id="Красный" checked disabled>
                                     <label for="Красный">Красный</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Розовый" id="Розовый">
+                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="Розовый" id="Розовый">
                                     <label for="Розовый">Розовый</label>
                                 </li>
                             </ul>
-                        </fieldset>        
+                        </form>
+                        </fieldset>      
                         <fieldset>
                             <legend>Bluetooth</legend>
+                            <form>
                             <ul>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Bluetooth" value="Есть" id="yes" checked>
+                                    <input class="filter-input filter-input-radio" type="radio" name="Bluetooth" value="Есть" id="yes" checked>
                                     <label for="yes">Есть</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="Bluetooth" value="Нет" id="no">
+                                    <input class="filter-input filter-input-radio" type="radio" name="Bluetooth" value="Нет" id="no">
                                     <label for="no">Нет</label>
                                 </li>
                             </ul>
+                            </form>
+                            <button type="submit" class="filter-button button"><h3>Показать</h3></button>
                         </fieldset>    
-                        <button type="submit" class="filter-button button"><h3>Показать</h3></button>
-                    </form>
                 </li>    
-                <li class="main-filters sorting">
-                    <p>Сортировка</p>
+                <li class="main-filters-sorting">
+                    <p class="filter">Сортировка:</p>
                     <ul class="sorting-filters">
-                        <li class="current-sorting-filters">По цене</li>
+                        <li class="sorting-filters-current"><a href="#">По цене</a></li>
                         <li><a href="#">По типу</a></li>
                         <li><a href="#">По популярности</a></li>
+                        <li><a class="arrow arrow-up" href="#"></a></li> <!--  заготовка под стрелки -->
+                        <li><a class="arrow arrow-down" href="#"></a></li>
                     </ul>
+                    <a class="arrow arrow-up" href="#"></a> <!--  заготовка под стрелки -->
+                    <a class="arrow arrow-down arrow-current" href="#"></a>
                 </li>
             </ul>
             <!-- Здесь будет форма -->
