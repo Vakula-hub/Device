@@ -3,7 +3,7 @@
         padding: 0;
         font-family: "Open Sans", "Arial", sans-serif;
         font-size: 15px;
-        font-weight: normal;
+        font-weight: lighter;
         line-height: 30px;
         color: #000000;
         background-color: #ffffff;
@@ -44,13 +44,13 @@
     .main-header-navigation .user-navigation {
         font-family: "Open Sans", "Arial", sans-serif;
         font-size: 15px;
-        font-weight: normal;
+        font-weight: lighter;
         line-height: 30px;
     }
     .submenu .catalog-item {
         font-family: "Open Sans", "Arial", sans-serif;
         font-size: 15px;
-        font-weight: normal;
+        font-weight: lighter;
         line-height: 36px;
         color: #000000;
         text-transform: none;
@@ -229,7 +229,7 @@
     .slide p.slide-number {
         font-family: "Gilroy", "Arial", sans-serif;
         font-size: 179.2px;
-        font-weight: normal;
+        font-weight: lighter;
         line-height: 179.2px;
         /* position: absolute; */
         /* top: 228px;
@@ -243,7 +243,7 @@
     .slide .slide-value td {
         font-family: "Gilroy", "Arial", sans-serif;
         font-size: 36px;
-        font-weight: normal;
+        font-weight: lighter;
         line-height: 48px;
         /* position: absolute; */
         /* top: 641px;
@@ -252,7 +252,7 @@
     .slide .slide-feature td {
         font-family: "Open Sans", "Arial", sans-serif;
         font-size: 13px;
-        font-weight: normal;
+        font-weight: lighter;
         line-height: 20px;
         /* position: absolute; */
         /* top: 692px;
@@ -702,7 +702,7 @@
 .user-footer-navigation .user-navigation {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 15px;
-    font-weight: normal;
+    font-weight: lighter;
     line-height: 36px;
     width: 120px;
     height: 16px;
@@ -732,7 +732,7 @@
     color: #000000;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: lighter;
     line-height: 18px;
 }
 .modal a:hover,
@@ -765,7 +765,7 @@
 [placeholder] {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: lighter;
     line-height: 18px;
     color: #464646;
 }
@@ -859,23 +859,19 @@
 .breadcrumbs-current {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: lighter;
     line-height: 24px;
-    color: #000000;
-    opacity: 30%;
+    color: #00000030;
 }
 .breadcrumbs a:hover,
 .breadcrumbs a:focus {
-    color: #000000;
-    opacity: 60%;
+    color: #00000060;
 }
 .breadcrumbs a:active {
-    color: #000000;
-    opacity: 10%;
+    color: #00000010;
 }
 .breadcrumbs-current {
-    color: #000000;
-    opacity: 30%;
+    color: #00000030;
 }
 .filters fieldset {
     border: none;
@@ -904,7 +900,7 @@ p.filter {
 .filter-input + label {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
-    font-weight: normal;
+    font-weight: lighter;
     line-height: 40px;
     color: #000000;
 }
@@ -965,13 +961,12 @@ p.filter {
     opacity: 100%;
 }
 a.arrow {
-    display: inline-block;
     margin: 0 10px;
     font-size: 0px;
 }
 .arrow::before {
     display: inline-block;
-    content: "git";
+    content: " ";
     border: 20px solid #00000020;
     border-right-width: 10px;
     border-left-width: 10px;
@@ -983,4 +978,114 @@ a.arrow {
 }
 .arrow-down::before {
     border-bottom-width: 0px;
+}   
+.arrow-icon-up:hover .arrow-up::before,
+.arrow-icon-up:focus .arrow-up::before {
+    border: 20px solid #00000040;
+    border-right-width: 10px;
+    border-left-width: 10px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-width: 0px;
 }
+.arrow-icon-down:hover .arrow-down::before,
+.arrow-icon-down:focus .arrow-down::before {
+    border: 20px solid #00000040;
+    border-right-width: 10px;
+    border-left-width: 10px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-width: 0px;
+}
+.arrow-icon-up:active .arrow-up::before {
+    border: 20px solid #000000;
+    border-right-width: 10px;
+    border-left-width: 10px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-width: 0px;
+}
+.arrow-icon-down:active .arrow-down::before {
+    border: 20px solid #000000;
+    border-right-width: 10px;
+    border-left-width: 10px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-width: 0px;
+}
+.catalog ul {
+    list-style: none;
+}
+.catalog a {
+    color: #000000;
+}
+.catalog h4 {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    width: 254px;
+    height: 70px;
+    word-wrap: break-word;
+    text-align: left;
+}
+.catalog-item-price {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 24px;
+    width: 160px;
+    height: 80px;
+    word-wrap: break-word;
+    text-align: right;
+}
+.catalog-button {
+    border: none;
+    background-color: #ffffff;
+    outline: #ffffff;
+    display: none;
+}
+.cart .catalog-button {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #000000;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.cart .catalog-button:active {
+    color: #00000030;
+}
+.cart h3::before {
+    content: "";
+    background-color: #f0c52e;
+    width: 200px;
+    height: 8px;
+    position: absolute;
+}
+.cart:hover h3::before,
+.cart:focus h3::before,
+.cart:active h3::before {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+}
+.match .catalog-button {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 13px;
+    font-weight: lighter;
+    line-height: 36px;
+    color: #00000050;
+}
+.image-1:hover,
+.button-1-1 {
+    filter: opacity(70%);
+    display: block;
+}
+
+/* p.image-1 button.button-1-1 {
+    display: none;
+}
+p.image-1:hover button.button-1-1 {
+    display: block; */
