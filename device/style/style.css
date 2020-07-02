@@ -1126,14 +1126,29 @@ a.arrow {
 .pagination-list {
     list-style: none;
 }
+.pagination-list::before {
+    content: " ";
+    width: 760px;
+    height: 70px;
+    background-color: #00000008;
+    position: absolute;
+    z-index: -1;
+}
+.pagination-item {
+    width: 126px;
+    height: 70px;
+}
 .pagination-list .button {
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 16px;
     font-weight: bold;
     line-height: 24px;
     color: #000000;
+    background-color: transparent;
     letter-spacing: 5px;
     text-transform: uppercase;
+    width: 126px;
+    height: 70px;
 }
 .pagination-list a {
     font-family: "Gilroy", "Arial", sans-serif;
@@ -1141,7 +1156,35 @@ a.arrow {
     font-weight: bold;
     line-height: 24px;
     color: #00000030;
+    width: 126px;
+    height: 70px;
+    z-index: 1;
 }
 .pagination-item-current a {
+    color: #000000;
+}
+.catalog-button-back:hover,
+.catalog-button-back:focus,
+.catalog-button-next:hover,
+.catalog-button-next:focus {
+    background-color: #00000008;
+    width: 126px;
+    height: 70px;
+    z-index: 1;
+}
+.catalog-button-back:active,
+.catalog-button-next:active {
+    opacity: 30%;
+}
+.pagination-item:hover a,
+.pagination-item:focus a {
+    color: #00000060;
+}
+.pagination-item:active a {
+    color: #000000;
+}
+.pagination-item-current:hover a,
+.pagination-item-current:focus a,
+.pagination-item-current:active a {
     color: #000000;
 }
