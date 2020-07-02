@@ -960,6 +960,7 @@ p.filter {
     color: #000000;
     opacity: 100%;
 }
+/* Делаем стрелки сортировки */
 a.arrow {
     margin: 0 10px;
     font-size: 0px;
@@ -1124,4 +1125,23 @@ a.arrow {
 }
 .pagination-list {
     list-style: none;
+}
+.pagination-list .button {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #000000;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.pagination-list a {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #00000030;
+}
+.pagination-item-current a {
+    color: #000000;
 }
