@@ -21,15 +21,12 @@
     .navigation::before {
         content: "";
         background-color: #f7e296;
-        /* position: absolute; */
         width: 1160px;
         height: 299px;
         position: absolute;
         margin-left: 140px;
         margin-top: 40px;
         z-index: -1;
-        /* top: 50px; */
-        /* left: 140px; */
     }
     .main-header-logo {
         width: 168px;
@@ -37,9 +34,7 @@
         margin-top: 15px;
         margin-left: 197px;
         position: absolute;
-        /* top: 17px;
-        left: 200px; */
-        z-index: 2;
+        z-index: 1;
     }
     .main-navigation .site-navigation {
         font-family: "Gilroy", "Arial", sans-serif;
@@ -62,35 +57,20 @@
         color: #000000;
         text-transform: none;
     }
-    /* .submenu .block-1 {
-        position: absolute;
-        top: 210px;
-        left: 200px;
-        z-index: 1;
-    } */
-    /* .submenu .block-2 {
-        position: absolute;
-        top: 210px;
-        left: 439px;
-        z-index: 1;
-    } */
-    /* .submenu .block-3 {
-        position: absolute;
-        top: 210px;
-        left: 639px;
-        z-index: 1;
-    } */
+    
     /* отменяем маркеры */
     .site-navigation,
     .user-navigation,
     .submenu {
         list-style: none;
     }
+
     /* меняем цвет ссылкам */
     .site-navigation a,
     .user-navigation a {
         color: #000000;
     }
+
     /* Делаем ссылки интерактивными */
     .site-navigation a:hover,
     .site-navigation a:focus,
@@ -147,11 +127,19 @@
         /* top: 158px;
         left: 1121px; */
     /* } */
-    .submenu {
-        background-color: transparent;
-        background-size: 1160px 129px;
+    .submenu::before {
+        content: "";
+        background-color: #f7e296;
+        min-width: 1160px;
+        min-height: 129px;
+        position: absolute;
+        margin-left: -60px;
+        /* margin-top: 40px; */
+        z-index: -1;
+        /* background-color: transparent; */
+        /* background-size: 1160px 129px; */
         /* background-position: 140px 210px; */
-        z-index: 1;
+        /* z-index: 1; */
     }
         /* делаем выпадающее меню */
     li.catalog ul.submenu {
@@ -1285,7 +1273,6 @@ ul.submenu li.catalog-item {
     display: flex;
     flex-direction: column;
     min-width: 239px; 
-
 }
 .block-2 {
     display: flex;
