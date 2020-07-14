@@ -33,6 +33,7 @@
         height: 47px;
         margin-top: 15px;
         margin-left: 197px;
+        margin-bottom: 0px;
         position: absolute;
         z-index: 1;
     }
@@ -131,10 +132,9 @@
         content: "";
         background-color: #f7e296;
         min-width: 1160px;
-        min-height: 129px;
+        height: 129px;
         position: absolute;
         margin-left: -60px;
-        /* margin-top: 40px; */
         z-index: -1;
         /* background-color: transparent; */
         /* background-size: 1160px 129px; */
@@ -224,7 +224,7 @@
     .slide p.slide-number {
         font-family: "Gilroy", "Arial", sans-serif;
         font-size: 179.2px;
-        font-weight: lighter;
+        font-weight: bold;
         line-height: 179.2px;
         /* position: absolute; */
         /* top: 228px;
@@ -232,14 +232,16 @@
         color: black;
         /* z-index: 100; */
     }
-    table {
+    /* table {
         border-spacing: 81px 25px;
-            }
+    } */
     .slide .slide-value td {
         font-family: "Gilroy", "Arial", sans-serif;
         font-size: 36px;
         font-weight: lighter;
         line-height: 48px;
+        margin: 0;
+        padding: 0;
         /* position: absolute; */
         /* top: 641px;
         left: 739px; */
@@ -1207,46 +1209,45 @@ a.arrow {
 }
 
 /*РАЗМЕЧАЕМ СЕТКУ*/
+
+/*Header*/
 .main-header {
-    min-height: 299px;
+    min-height: 320px;
 }
 .main-navigation {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    /*временно для сетки*/
-    min-height: 299px;
+    /* height: 300px; */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
 }
 div.navigation {
     width: 100%;
-    /*временно для сетки*/
-    min-height: 70px;
 }
 .user-navigation {
     display: flex;
     width: 1040px;
     margin-left: 140px;
     margin-top: 40px;
-    margin-bottom: 51px;
+    margin-bottom: 50px;
     padding-top: 53px;
     padding-left: 60px;
     padding-right: 60px;
 }
 .user-navigation li:nth-child(2) {
-    /* margin-top: auto; */
     margin-left: auto;
     width: 280px;
 }
 .user-navigation li:nth-child(3) {
-    /* margin-top: auto;  */
-    /* margin-right: auto; */
     width: 130px;
 }
 .site-navigation {
     display: flex;
     width: 1040px;
+    height: 18px;
+    margin-top: 0px;
+    padding-top: 0px;
     margin-left: 140px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     padding-left: 60px;
     padding-right: 60px;
 }
@@ -1260,17 +1261,20 @@ ul.site-navigation li:nth-child(3) {
 .submenu-container .submenu {
     display: flex;
     min-width: 639px;
+    height: 129px;
     flex-direction: row;
+    margin-top: 0px;
     padding-top: 37px;
     padding-left: 0px;
     position: absolute;
+    margin-bottom: 0px;
 }
 ul.submenu li.catalog-item {
     margin-left: 0px;
-    padding: 0px;
 }
 .block-1 {
     display: flex;
+    height: 130px;
     flex-direction: column;
     min-width: 239px; 
 }
@@ -1278,9 +1282,68 @@ ul.submenu li.catalog-item {
     display: flex;
     flex-direction: column;
     min-width: 200px;
+    height: 130px;
 }
 .block-3 {
     display: flex;
     flex-direction: column;
     min-width: 200px;
+    height: 130px;
 } 
+
+/*Сетка Slide в Main*/
+.slide {
+    display: flex;
+    /* justify-content: space-around; */
+    width: 1160px;
+    /* justify-content: center; */
+    /* margin-left: 140px; */
+}
+.slide-navigation .form {
+    display: flex;
+    width: 100px;
+    margin-top: 266px;
+    margin-left: 1139px;
+    /* margin-right: 80px; */
+    justify-content: space-between ;
+    /* margin-right: 223px; */
+    position: absolute;
+}
+.slide p.slide-number {
+    margin: -120px 60px 335px 335px;
+    padding-top: 10px;
+    position: absolute;
+}
+.slide .info {
+    /* list-style: none; */
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    min-height: 380px;
+    margin-left: auto;
+    padding: 0px;
+    margin-top: 0px;
+}
+.slide .image {
+    margin-top: -70px;
+    margin-left: 230px;
+    width: 384px;
+    height: 486px;
+}
+.info h2 {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+.slide-text {
+    margin-top: 0px;
+    margin-bottom: 37px;
+}
+.details {
+    margin-top: 0px;
+    margin-bottom: 72px;
+}
+.slide-table {
+    margin-top: 0px;
+    margin-bottom: 117px;
+}
+
