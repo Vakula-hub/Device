@@ -57,6 +57,7 @@
         line-height: 36px;
         color: #000000;
         text-transform: none;
+        z-index: 2;
     }
     
     /* отменяем маркеры */
@@ -81,9 +82,6 @@
     }
     .search.current .search {
         color: #00000030;
-        /* position: absolute; */
-        /* top: 53px;
-        left: 238px; */
     }
     .search.current .search:hover,
     .search.current .search:focus {
@@ -93,41 +91,7 @@
     .user-navigation a:active {
         color: #00000030
     }
-    /* .main-navigation .login-link .login-link { */
-        /* position: absolute; */
-        /* top: 53px;
-        left: 626px; */
-    /* } */
-    /* .main-navigation .compare .compare { */
-        /* position: absolute; */
-        /* top: 53px;
-        left: 927px; */
-    /* } */
-    /* .main-navigation .cart .cart { */
-        /* position: absolute; */
-        /* top: 53px;
-        left: 1040px; */
-    /* } */
-    /* .main-navigation .catalog .catalog { */
-        /* position: absolute; */
-        /* top: 158px;
-        left: 199px; */
-    /* } */
-    /* .main-navigation .delivery .delivery { */
-        /* position: absolute; */
-        /* top: 158px;
-        left: 740px; */
-    /* } */
-    /* .main-navigation .warranty .warranty { */
-        /* position: absolute; */
-        /* top: 158px;
-        left: 898px; */
-    /* } */
-    /* .main-navigation .contacts .contacts { */
-        /* position: absolute; */
-        /* top: 158px;
-        left: 1121px; */
-    /* } */
+   
     .submenu::before {
         content: "";
         background-color: #f7e296;
@@ -135,11 +99,7 @@
         height: 129px;
         position: absolute;
         margin-left: -60px;
-        z-index: -1;
-        /* background-color: transparent; */
-        /* background-size: 1160px 129px; */
-        /* background-position: 140px 210px; */
-        /* z-index: 1; */
+        z-index: 1;
     }
         /* делаем выпадающее меню */
     li.catalog ul.submenu {
@@ -151,21 +111,12 @@
     /* Размечаем Main */
     .slide-navigation .current1 {
         list-style: none;
-        /* position: absolute; */
-        /* top: 555px;
-        right: 289px; */
     }
     .slide-navigation .current2 {
         list-style: none;
-        /* position: absolute; */
-        /* top: 555px;
-        right: 256px; */
     }
     .slide-navigation .current3 {
         list-style: none;
-        /* position: absolute; */
-        /* top: 555px;
-        right: 223px; */
     }
     .slide h2 {
         font-family: "Gilroy", "Arial", sans-serif;
@@ -174,22 +125,11 @@
         line-height: 56px;
         width: 560px;
         height: 128px;
-        /* position: absolute; */
-        /* top: 318px;
-        left: 739px; */
     }
     .slide .slide-text {
         width: 557px;
         height: 70px;
-        /* position: absolute; */
-        /* top: 448px;
-        left: 739px; */
     }
-    /* .slide img { */
-        /* position: absolute; */
-        /* top: 240px;
-        left: 256px; */
-    /* } */
     .slide a {
         color: #000000;
     }
@@ -201,9 +141,6 @@
         text-align: center;
         letter-spacing: 5px;
         text-transform: uppercase;
-        /* position: absolute; */
-        /* left: 783px; 
-        top: 553px; */
     }
     /* Добавляем псевдоэлемент, рисуем линию */
     .layer .details::before {
@@ -212,29 +149,19 @@
         position: absolute;
         width: 220px;
         height: 8px;
-        /* left: 740px;
-        top: 561px; */
     }
     .layer:hover .details::before {
         display: block;
         height: 40px;
-        /* left: 740px;
-        top: 545px; */
     }
     .slide p.slide-number {
         font-family: "Gilroy", "Arial", sans-serif;
         font-size: 179.2px;
         font-weight: bold;
         line-height: 179.2px;
-        /* position: absolute; */
-        /* top: 228px;
-        right: 187px; */
         color: black;
-        /* z-index: 100; */
+        z-index: 0;
     }
-    /* table {
-        border-spacing: 81px 25px;
-    } */
     .slide .slide-value td {
         font-family: "Gilroy", "Arial", sans-serif;
         font-size: 36px;
@@ -242,22 +169,17 @@
         line-height: 48px;
         margin: 0;
         padding: 0;
-        /* position: absolute; */
-        /* top: 641px;
-        left: 739px; */
     }
     .slide .slide-feature td {
         font-family: "Open Sans", "Arial", sans-serif;
         font-size: 13px;
         font-weight: lighter;
         line-height: 20px;
-        /* position: absolute; */
-        /* top: 692px;
-        left: 740px; */
     }
     #slider2, #slider3 {
         display: none;
     }
+
     /* Размечаем Popular-list */
     .popular-list {
         list-style: none;
@@ -270,127 +192,111 @@
         font-size: 18px;
         font-weight: bold;
         line-height: 24px;
-        /* position: absolute; */
     }        
-    /* .popular-item-1 p { */
-        /* position: absolute; */
-        /* left: 140px;
-        top: 1012px; */
-    /* } */
-    /* .popular-item-1 a.image { */
-        /* position: absolute; */
-        /* left: 171px; 
-        top: 872px; */
-    /* } */
-    .popular-item-1::before {
+   .popular-item-1::before {
         content: " ";
         background-image: url("/device/images/Layer-popular.png");
         background-color: #f7e296;
         width: 160px;
         height: 160px;
-        /* position: absolute; */
-        /* left: 140px;
-        top: 820px; */
+        position: absolute;
+        z-index: -1;
         }
-    /* .popular-item-2  p { */
-        /* position: absolute; */
-        /* left: 340px;
-        top: 1012px; */
-    /* } */
-    /* .popular-item-2 a.image { */
-        /* position: absolute; */
-        /* left: 378px; 
-        top: 861px; */
-    /* } */
     .popular-item-2::before {
         content: " ";
         background-image: url("/device/images/Layer-popular.png");
         background-color: #f7e296;
+        width: 160px;
+        height: 160px;
         /* width: 160px;
         height: 160px; */
-        /* position: absolute; */
+        position: absolute;
         /* left: 340px;
         top: 820px; */
+        z-index: -1;
     }
     /* .popular-item-3  p {  */
         /* position: absolute; */
         /* left: 540px;
         top: 1012px; */
     /* } */
-    /* .popular-item-3 a.image { */
+    .popular-item-3 a.image {
         /* position: absolute; */
         /* left: 589px; 
         top: 858px; */
-    /* } */
+    }
     .popular-item-3::before {
         content: " ";
         background-image: url("/device/images/Layer-popular.png");
         background-color: #f7e296;
-        /* width: 160px;
-        height: 160px; */
-        /* position: absolute; */
+        width: 160px;
+        height: 160px;
+        position: absolute;
         /* left: 540px;
         top: 820px; */
+        z-index: -1;
     }
     /* .popular-item-4 p { */
         /* position: absolute; */
         /* left: 740px;
         top: 1012px; */
-    /* } */
-    /* .popular-item-4 a.image { */
+    .popular-item-4 a.image {
         /* position: absolute; */
         /* left: 768px; 
         top: 870px; */
-    /* } */
+    }
     .popular-item-4::before {
         content: " ";
         background-image: url("/device/images/Layer-popular.png");
         background-color: #f7e296;
         width: 160px;
         height: 160px;
-        /* position: absolute; */
+        position: absolute;
         /* left: 740px;
         top: 820px; */
+        z-index: -1;
     }
     /* .popular-item-5 p { */
         /* position: absolute; */
         /* left: 940px;
         top: 1012px; */
     /* } */
-    /* .popular-item-5 a.image { */
+    .popular-item-5 a.image {
         /* position: absolute; */
         /* left: 995px; 
         top: 852px; */
-    /* } */
+    }
     .popular-item-5::before {
         content: " ";
         background-image: url("/device/images/Layer-popular.png");
         background-color: #f7e296;
-        /* width: 160px;
-        height: 160px; */
-        /* position: absolute; */
+        width: 160px;
+        height: 160px;
+        position: absolute;
         /* left: 940px;
         top: 820px; */
+        z-index: -1;
     }
     /* .popular-item-6 p { */
         /* position: absolute; */
         /* left: 1140px;
         top: 1012px; */
     /* } */
-    /* .popular-item-6 a.image { */
+    .popular-item-6 a.image {
         /* position: absolute; */
         /* left: 1153px; 
         top: 869px; */
-    /* } */
+    }
     .popular-item-6::before {
         content: " ";
         background-image: url("/device/images/Layer-popular.png");
         background-color: #f7e296;
         width: 160px;
         height: 160px;
-        /* position: absolute; */
+        position: absolute;
         /* left: 1140px;
         top: 820px; */
+        z-index: -1;
     }
     /* Размечаем секцию сервиса */
     #warranty,
@@ -448,7 +354,7 @@
         /* position: absolute; */
         /* top: 1234px;
         left: 163px; */
-        text-align: center;
+        /* text-align: center; */
     }
     li.service-item a.delivery::before {
         content: " ";
@@ -1212,7 +1118,8 @@ a.arrow {
 
 /*Header*/
 .main-header {
-    min-height: 320px;
+    width: 1160px;
+    height: 299px;
 }
 .main-navigation {
     display: flex;
@@ -1346,4 +1253,30 @@ ul.submenu li.catalog-item {
     margin-top: 0px;
     margin-bottom: 117px;
 }
-
+.popular-list {
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    height: 160px;
+    margin-left: 140px;
+    /* margin-bottom: 126px; */
+    padding: 0;
+}
+.popular-list .image{
+    display: flex;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 41px;
+    justify-content: center;
+    align-items: center;
+}
+.popular-item-2 .image {
+    align-items: flex-end;
+}
+.popular-list p.name {
+    display: flex;
+    width: 160px;
+    height: 80px;
+    margin-bottom: 126px;
+    justify-content: space-between;
+}
