@@ -320,37 +320,14 @@
         /* top: 1221px;
         left: 541px; */
     }
-    .service p.text {
-        width: 437px;
-        height: 158px;
-        color: #464646;
-        /* position: absolute; */
-        /* top: 1304px;
-        left: 540px; */
-    }
-    /* .delivery p.image { */
-        /* position: absolute; */
-        /* top: 1227px;
-        right: 206px; */
-    /* } */
-    /* .warranty p.image { */
-        /* position: absolute; */
-        /* top: 1203px;
-        right: 186px; */
-    /* } */
-    /* .credit p.image { */
-        /* position: absolute; */
-        /* top: 1203px;
-        right: 210px; */
-    /* } */
-    .service-list {
+    .service-list a {
         font-family: "Gilroy", "Arial", sans-serif;
         font-size: 18px;
         font-weight: bold;
         line-height: 24px;
         text-transform: uppercase;
         letter-spacing: 5px;
-        word-spacing: 52px;
+        word-spacing: 48px;
         /* position: absolute; */
         /* top: 1234px;
         left: 163px; */
@@ -359,14 +336,14 @@
     li.service-item a.delivery::before {
         content: " ";
         background-color: #f0c52e;
-        /* position: absolute; */
+        position: absolute;
         width: 160px;
         height: 8px;
         /* top: 1238px;
         left: 140px; */
+        z-index: -1;
     }
     li.service-item:hover a.delivery::before {
-        display: block;
         height: 40px;
         /* left: 140px;
         top: 1238px; */
@@ -374,14 +351,14 @@
     li.service-item a.warranty::before {
         content: " ";
         background-color: #f0c52e;
-        /* position: absolute; */
+        position: absolute;
         width: 160px;
         height: 8px;
+        z-index: -1;
         /* top: 1302px;
         left: 140px; */
     }
     li.service-item:hover a.warranty::before {
-        display: block;
         height: 40px;
         /* left: 140px;
         top: 1302px; */
@@ -389,14 +366,15 @@
     li.service-item a.credit::before {
         content: " ";
         background-color: #f0c52e;
-        /* position: absolute; */
+        position: absolute;
         width: 160px;
         height: 8px;
+        z-index: -1;
         /* top: 1366px;
         left: 140px; */
     }
     li.service-item:hover a.credit::before {
-        display: block;
+        display: flex;
         height: 40px;
         /* left: 140px;
         top: 1366px; */
@@ -405,19 +383,22 @@
     .service ul.service-list::before {
         content: " ";
         background-color: #000000;
-        /* position: absolute; */
+        position: absolute;
         width: 7px;
         height: 319px;
+        margin-left: 280px;
+        padding-left: 0;
         /* top: 1142px;
         left: 417px; */
     }
     /* Подложка на всю ширину */
     .service::before {
         content: " ";
-        background-color: #cccccc;
-        /* position: absolute; */
+        background-color: #e5e5e5;
+        position: absolute;
         width: 1445px;
         height: 288px;
+        z-index: -1;
         /* top: 1242px;
         left: 0px; */
     }
@@ -1253,13 +1234,14 @@ ul.submenu li.catalog-item {
     margin-top: 0px;
     margin-bottom: 117px;
 }
+/* РАЗМЕЧАЕМ POPULAR-LIST */
 .popular-list {
     display: flex;
     justify-content: space-between;
     width: 1160px;
     height: 160px;
     margin-left: 140px;
-    /* margin-bottom: 126px; */
+    margin-bottom: 126px;
     padding: 0;
 }
 .popular-list .image{
@@ -1279,4 +1261,44 @@ ul.submenu li.catalog-item {
     height: 80px;
     margin-bottom: 126px;
     justify-content: space-between;
+}
+
+/* РАЗМЕЧАЕМ SERVICE */
+.conteiner-service {
+    display: flex;
+    margin-bottom: 94px;
+    min-height: 390px;
+}
+.service-list {
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+    min-height: inherit;
+    margin-left: 140px;
+    padding-left: 0;
+}
+.service-item .delivery,
+.service-item .warranty,
+.service-item .credit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-flex {
+    display: flex;
+    margin-left: 240px;
+    padding: 0px;
+    min-width: 700px;
+}
+.service p.text {
+    width: 437px;
+    height: 158px;
+    background-color: transparent;
+    padding: 0px;
+}
+.service-flex .image {
+    width: 136px;
+    height: 164px;
+    margin-left: 121px;
+    padding: 0px;
 }
