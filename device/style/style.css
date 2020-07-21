@@ -407,80 +407,49 @@
         list-style: none;
     }
     .partners-logo .logo-1 {
-        display: block;
-        filter: sepia(100%); /* МЕНЯЕТ ЦВЕТ */
-        background-color: #ffffff;
+        /* display: block; */
+        background-color: #ffffff ;
         opacity: 20%;
-        /* position: absolute; */
-        /* top: 1624px;
-        left: 140px; */
+        filter: grayscale(100%);
     }
     .partners-logo .logo-1:hover, 
     .partners-logo .logo-1:focus {
-        display: block;
-        filter: sepia(0%);
+        filter: grayscale(0%);
         background-color: #ffffff;
         opacity: 100%;
-        /* position: absolute; */
-        /* top: 1624px;
-        left: 140px; */
     }
     .partners-logo .logo-2 {
-        display: block;
-        filter: sepia(100%);
+        filter: grayscale (100%);
         background-color: #ffffff;
         opacity: 20%;
-        /* position: absolute; */
-        /* top: 1624px;
-        left: 440px; */
     }
     .partners-logo .logo-2:hover, 
     .partners-logo .logo-2:focus {
-        display: block;
-        filter: sepia(0%);
+        filter: grayscale (0%);
         background-color: #ffffff;
         opacity: 100%;
-        /* position: absolute; */
-        /* top: 1624px;
-        left: 440px; */
     }
     .partners-logo .logo-3 {
-        display: block;
-        filter: sepia(100%);
+        filter: grayscale (100%);
         background-color: #ffffff;
         opacity: 20%;
-        /* position: absolute; */
-        /* top: 1624px;
-        left: 740px; */
     }
     .partners-logo .logo-3:hover, 
     .partners-logo .logo-3:focus {
-        display: block;
-        filter: sepia(0%);
+        filter: grayscale (0%);
         background-color: #ffffff;
         opacity: 100%;
-        /* position: absolute; */
-        /* top: 1624px;
-        left: 740px; */
     }
     .partners-logo .logo-4 {
-        display: block;
-        filter: sepia(100%);
+        filter: grayscale(100%);
         background-color: #ffffff;
         opacity: 20%;
-        /* position: absolute; */
-        /* top: 1624px;
-        left: 1037px; */
     }
     .partners-logo .logo-4:hover, 
     .partners-logo .logo-4:focus {
-        display: block;
-        filter: sepia(0%);
+        filter: grayscale (0%);
         background-color: #ffffff;
         opacity: 100%;
-        /* position: absolute; */
-        /* top: 1624px;
-        left: 1037px; */
     }
     /* размечаем контактную  информацию */
     .about-us ul{
@@ -1301,4 +1270,12 @@ ul.submenu li.catalog-item {
     height: 164px;
     margin-left: 121px;
     padding: 0px;
+}
+.partners-logo .logo {
+    display: flex;
+    width: 1160px;
+    height: 100px;
+    margin-left: 140px;
+    padding: 0px;
+    justify-content: space-between;
 }
