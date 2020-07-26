@@ -30,10 +30,10 @@
     }
     .main-header-logo {
         width: 168px;
-        height: 47px;
-        margin-top: 15px;
+        height: 35px;
+        margin-top: 23px;
         margin-left: 197px;
-        margin-bottom: 0px;
+        margin-bottom: 37px;
         position: absolute;
         z-index: 1;
     }
@@ -74,10 +74,10 @@
     }
 
     /* Делаем ссылки интерактивными */
-    .site-navigation a:hover,
-    .site-navigation a:focus,
-    .user-navigation a:hover,
-    .user-navigation a:focus {
+    .main-navigation .site-navigation a:hover,
+    .main-navigation .site-navigation a:focus,
+    .main-navigation .user-navigation a:hover,
+    .main-navigation .user-navigation a:focus {
         color: #00000060;
     }
     .search.current .search {
@@ -87,8 +87,8 @@
     .search.current .search:focus {
         color: #00000060;
     }
-    .site-navigation a:active,
-    .user-navigation a:active {
+    .main-navigation .site-navigation a:active,
+    .main-navigation .user-navigation a:active {
         color: #00000030
     }
    
@@ -431,7 +431,7 @@
         width: 219px;
         height: 20px;
         margin-left: 22px;
-        padding: 0px;
+        padding-left: 0px;
         justify-content: center;
         align-items: center;
         white-space: nowrap;
@@ -522,15 +522,19 @@
 .main-footer ul {
     list-style: none;
 }
+.main-footer {
+    color: #ffffff;
+}
 .main-footer a {
     color: #ffffff;
 }
-.main-footer {
-    color: #ffffff;
+.main-footer::before {
+    content: "";
+    width: 1440px;
+    height: 323px;
     background-color: #464646;
-    background-image: url("\device\images\background-footer.png");
-    background-position: 0 0;
-    background-repeat: repeat;
+    position: absolute;
+    z-index: -1;    
 }
 .main-footer .footer-contact-adress,
 .main-footer .footer-contact-tel {
@@ -544,26 +548,28 @@
     line-height: 24px;
     text-transform: uppercase;
     letter-spacing: 5px;
-    width: 124px;
-    height: 20px;
+    /* width: 124px;
+    height: 20px; */
 }
-.user-footer-navigation .user-navigation {
+.main-footer-navigation .user-navigation {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: normal;
     line-height: 36px;
-    width: 120px;
+    width: 360px;
     height: 16px;
 }
 .main-footer .footer-social {
     opacity: 30%;
 }
-.main-footer .footer-copyright::before {
+.main-footer .footer-contact-adress::after {
+    display: flex;
     content: " ";
     background-color: #ffcc00;
     width: 80px;
     height: 7px;
     position: absolute;
+    margin-top: 76px;
 }
 
 /* Стилизация модальных окон */
@@ -1070,7 +1076,7 @@ a.arrow {
 div.navigation {
     width: 100%;
 }
-.user-navigation {
+.main-navigation .user-navigation {
     display: flex;
     width: 1040px;
     margin-left: 140px;
@@ -1080,11 +1086,11 @@ div.navigation {
     padding-left: 60px;
     padding-right: 60px;
 }
-.user-navigation li:nth-child(2) {
+.main-navigation .user-navigation li:nth-child(2) {
     margin-left: auto;
     width: 280px;
 }
-.user-navigation li:nth-child(3) {
+.main-navigation .user-navigation li:nth-child(3) {
     width: 130px;
 }
 .site-navigation {
@@ -1222,14 +1228,15 @@ ul.submenu li.catalog-item {
 /* РАЗМЕЧАЕМ SERVICE */
 .conteiner-service {
     display: flex;
-    margin-bottom: 94px;
+    /* margin-bottom: 94px; */
     min-height: 380px;
+    /* padding: 0px; */
 }
 .service-list {
     display: flex;
     flex-direction: column;
     min-width: 160px;
-    min-height: inherit;
+    /* min-height: inherit; */
     margin-left: 140px;
     padding-left: 0;
 }
@@ -1244,14 +1251,14 @@ ul.submenu li.catalog-item {
     display: flex;
     margin-top: 142px;
     margin-left: 240px;
-    padding-top: 0px;
+    /* padding-top: 0px; */
     min-width: 700px;
 }
 .service-flex h2 {
     width: 219px;
     height: 52px;
     margin-top: 0px;
-    padding-top: 0px;
+    /* padding-top: 0px; */
 }
 .service p.text {
     width: 437px;
@@ -1263,13 +1270,14 @@ ul.submenu li.catalog-item {
     width: 136px;
     height: 164px;
     margin-left: 121px;
-    padding: 0px;
+    /* padding: 0px; */
 }
 /* РАЗМЕЧАЕМ ЛОГОТИПЫ ДЛЯ ПАРТНЕРОВ 2 */
 .partners-logo .logo {
     display: flex;
     width: 1160px;
     height: 100px;
+    /* margin-top: 0px; */
     margin-left: 140px;
     padding: 0px;
     justify-content: space-between;
@@ -1283,4 +1291,90 @@ ul.submenu li.catalog-item {
     margin-bottom: 94px;
     padding: 0;
     justify-content: space-between;
+}
+
+/* Разметка FOOTER  */
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    min-height: 323px;
+    /* margin-left: 140px; */
+}
+.main-footer .first-column {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    min-height: 323px;
+    margin-top: 0px;
+    margin-left: 140px;
+    margin-bottom: 1px;
+}
+.main-footer-logo {
+    width: 166px;
+    height: 35px;
+    margin: 0;
+    padding-top: 64px;
+    padding-bottom: 0px;
+}
+.footer-contact-adress {
+    padding-top: 40px;
+    margin: 0;
+}
+.main-footer .second-column {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    min-height: 323px;
+    margin-left: 100px;
+    margin-top: 0px;
+    margin-bottom: 1px;
+    align-items: center;
+}
+    .main-footer-navigation .main-footer-navigation {
+    display: flex;
+    width: 423px;
+    height: 20px;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 142px;
+}
+.footer-social ul {
+    display: flex;
+    width: 150px;
+    height: 32px;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 70px;
+}
+.main-footer .third-column {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    margin-left: 30px;
+    margin-top: 0px;
+    padding-top: 0px;
+    align-items: flex-end;
+}
+.main-footer-navigation .user-navigation {
+    display: flex;
+    width: 330px;
+    height: 15px;
+    margin: 0;
+    padding-top: 73px;
+    padding-left: 0px;
+    justify-content: space-between;
+}
+.footer-contact-tel {
+    /* display: flex; */
+    margin: 0;
+    padding-top: 52px;
+    text-align: right;
+}
+.footer-copyright {
+    width: 27px;
+    height: 35px;
+    margin: 0;
+    padding-top: 61px;
 }
