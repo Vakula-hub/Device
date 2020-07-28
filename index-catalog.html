@@ -56,15 +56,16 @@
             </div>
         </nav>
     </header>
-    
     <main class="container">
-        <h1 class="page-title">Моноподы для селфи</h1>
-        <ul class="breadcrumbs">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="index-catalog.html">Каталог</a></li>
-            <li class="breadcrumbs-current">Моноподы для селфи</li>
-        </ul>
-        <section class="filters">
+        <div class="page-title-breadcrumbs">
+            <h1 class="page-title">Моноподы для селфи</h1>
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="index-catalog.html">Каталог</a></li>
+                <li class="breadcrumbs-current"><a href="#">Моноподы для селфи</a></li>
+            </ul>
+        </div>        
+            <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <ul class="main-filters">
                 <li class="main-filters-filter">
@@ -80,45 +81,45 @@
                         </fieldset>        
                         <fieldset>
                             <legend>Цвет</legend>
-                            <form>
-                            <ul>
-                                <li class="filter-option">
-                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="Черный" id="Черный" checked>
-                                    <label for="Черный">Черный</label>
-                                </li>
-                                <li class="filter-option">
-                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="Белый" id="Белый">
-                                    <label for="Белый">Белый</label>
-                                </li>
-                                <li class="filter-option">
-                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="Синий" id="Синий" checked>
-                                    <label for="Синий">Синий</label>
-                                </li>
-                                <li class="filter-option">
-                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="Красный" id="Красный" checked disabled>
-                                    <label for="Красный">Красный</label>
-                                </li>
-                                <li class="filter-option">
-                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="Розовый" id="Розовый">
-                                    <label for="Розовый">Розовый</label>
-                                </li>
-                            </ul>
-                        </form>
+                                <form>
+                                    <ul>
+                                        <li class="filter-option">
+                                            <input class="filter-input filter-input-checkbox" type="checkbox" name="Черный" id="Черный" checked>
+                                            <label for="Черный">Черный</label>
+                                        </li>
+                                        <li class="filter-option">
+                                            <input class="filter-input filter-input-checkbox" type="checkbox" name="Белый" id="Белый">
+                                            <label for="Белый">Белый</label>
+                                        </li>
+                                        <li class="filter-option">
+                                            <input class="filter-input filter-input-checkbox" type="checkbox" name="Синий" id="Синий" checked>
+                                            <label for="Синий">Синий</label>
+                                        </li>
+                                        <li class="filter-option">
+                                            <input class="filter-input filter-input-checkbox" type="checkbox" name="Красный" id="Красный" checked disabled>
+                                            <label for="Красный">Красный</label>
+                                        </li>
+                                        <li class="filter-option">
+                                            <input class="filter-input filter-input-checkbox" type="checkbox" name="Розовый" id="Розовый">
+                                            <label for="Розовый">Розовый</label>
+                                        </li>
+                                    </ul>
+                                </form>
                         </fieldset>      
                         <fieldset>
                             <legend>Bluetooth</legend>
-                            <form>
-                            <ul>
-                                <li class="filter-option">
-                                    <input class="filter-input filter-input-radio" type="radio" name="Bluetooth" value="Есть" id="yes" checked>
-                                    <label for="yes">Есть</label>
-                                </li>
-                                <li class="filter-option">
-                                    <input class="filter-input filter-input-radio" type="radio" name="Bluetooth" value="Нет" id="no">
-                                    <label for="no">Нет</label>
-                                </li>
-                            </ul>
-                            </form>
+                                <form>
+                                    <ul>
+                                        <li class="filter-option">
+                                            <input class="filter-input filter-input-radio" type="radio" name="Bluetooth" value="Есть" id="yes" checked>
+                                            <label for="yes">Есть</label>
+                                        </li>
+                                        <li class="filter-option">
+                                            <input class="filter-input filter-input-radio" type="radio" name="Bluetooth" value="Нет" id="no">
+                                            <label for="no">Нет</label>
+                                        </li>
+                                    </ul>
+                                </form>
                             <button type="submit" class="filter-button button"><h3>Показать</h3></button>
                         </fieldset>    
                 </li>    
@@ -129,12 +130,14 @@
                         <li><a href="#">По типу</a></li>
                         <li><a href="#">По популярности</a></li>
                     </ul>
-                    <p class="arrow-icon-up">
-                    <a class="arrow arrow-up" href="#"></a> <!--  заготовка под стрелки -->
-                    </p>
-                    <p class="arrow-icon-down">
-                    <a class="arrow arrow-down arrow-current" href="#"></a>
-                    </p>
+                    <div class="arrow-icon">
+                        <p class="arrow-icon-up">
+                            <a class="arrow arrow-up" href="#"></a> <!--  заготовка под стрелки -->
+                        </p>
+                        <p class="arrow-icon-down">
+                            <a class="arrow arrow-down arrow-current" href="#"></a>
+                        </p>
+                    </div>
                 </li>
             </ul>
             <!-- Здесь будет форма -->
@@ -149,8 +152,10 @@
                         <p class="cart"><button type="submit" class="catalog-button button-1-1"><h3>В корзину</h3></button></p>
                         <p class="match"><button type="submit" class="catalog-button button-1-2"><h3>Добавить к сравнению</h3></button></p>
                     </div>
-                    <a class="catalog-item-name name-1" href="#"><h4>Любительская селфи-палка</h4></a>
-                    <p class="catalog-item-price price-1"><b>500 руб</b></p>
+                    <div class="image-name-price">
+                        <a class="catalog-item-name name-1" href="#"><h4>Любительская селфи-палка</h4></a>
+                        <p class="catalog-item-price price-1"><b>500 руб</b></p>
+                    </div>
                 </li>
                 <li class="catalog-item">
                     <div class="image-2">
@@ -158,8 +163,10 @@
                         <p class="cart"><button type="submit" class="catalog-button button-2-1"><h3>В корзину</h3></button></p>
                         <p class="match"><button type="submit" class="catalog-button button-2-2"><h3>Добавить к сравнению</h3></button></p>
                     </div>
-                    <a class="catalog-item-name name-2" href="#"><h4>Профессиональная<br>селфи-палка</h4></a>
-                    <p class="catalog-item-price price-2"><b>1500 руб</b></p>
+                    <div class="image-name-price">
+                        <a class="catalog-item-name name-2" href="#"><h4>Профессиональная<br>селфи-палка</h4></a>
+                        <p class="catalog-item-price price-2"><b>1500 руб</b></p>
+                    </div>
                 </li>
                 <li class="catalog-item">
                     <div class="image-3">
@@ -167,8 +174,10 @@
                          <p class="cart"><button type="submit" class="catalog-button button-3-1"><h3>В корзину</h3></button></p>
                         <p class="match"><button type="submit" class="catalog-button button-3-2"><h3>Добавить к сравнению</h3></button></p>
                     </div>
-                    <a class="catalog-item-name name-3" href="#"><h4>Непотопляемая селфи-палка</h4></a>
-                    <p class="catalog-item-price price-3"><b>2500 руб</b></p>
+                    <div class="image-name-price">
+                        <a class="catalog-item-name name-3" href="#"><h4>Непотопляемая селфи-палка</h4></a>
+                        <p class="catalog-item-price price-3"><b>2500 руб</b></p>
+                    </div>
                 </li>
                 <li class="catalog-item">
                     <div class="image-4">
@@ -177,15 +186,19 @@
                         <p class="match"><button type="submit" class="catalog-button button-4-2"><h3>Добавить к сравнению</h3></button></p>
                         <!-- на картинке должна быть лейба NEW -->
                     </div>
-                    <a class="catalog-item-name name-4" href="#"><h4>Селфи-палка &#171;Следуй<br>за мной&#187;</h4>
-                    <p class="catalog-item-price price-4"><b>4900 руб</b></p>
+                    <div class="image-name-price">
+                        <a class="catalog-item-name name-4" href="#"><h4>Селфи-палка &#171;Следуй<br>за мной&#187;</h4></a>
+                        <p class="catalog-item-price price-4"><b>4900 руб</b></p>
+                    </div>
                 </li>
             </ul>
             <ul class="pagination-list">
                 <li><button class="button catalog-button catalog-button-back" type="button">Назад</button></li>
-                <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-                <li class="pagination-item"><a href="#">2</a></li>
-                <li class="pagination-item"><a href="#">3</a></li>
+                <div class="pagination-item">
+                <li class="pagination-item-current"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                </div>
                 <li><button class="button catalog-button catalog-button-next" type="button">Вперед</button></li>
             </ul>
         </section>
