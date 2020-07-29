@@ -64,13 +64,16 @@
                 <li><a href="index-catalog.html">Каталог</a></li>
                 <li class="breadcrumbs-current"><a href="#">Моноподы для селфи</a></li>
             </ul>
-        </div>        
-            <section class="filters">
+        </div>
+        <div class="container-1">        
+        <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <ul class="main-filters">
                 <li class="main-filters-filter">
-                    <p class="filter">Фильтр:</p>
-                         <fieldset>
+                    <p class="filter">
+                        Фильтр:
+                    </p>
+                        <fieldset>
                             <legend>Стоимость</legend>
                                 <form class="filter" action="#" oninput="priceoutput.value=pricecount.value" method="GET">
                                     <p>
@@ -122,8 +125,11 @@
                                 </form>
                             <button type="submit" class="filter-button button"><h3>Показать</h3></button>
                         </fieldset>    
-                </li>    
-                <li class="main-filters-sorting">
+                </li>
+            </ul>
+        </section>
+        <div class="container-2">
+        <section class="main-filters-sorting">
                     <p class="filter">Сортировка:</p>
                     <ul class="sorting-filters">
                         <li class="sorting-filters-current"><a href="#">По цене</a></li>
@@ -138,12 +144,9 @@
                             <a class="arrow arrow-down arrow-current" href="#"></a>
                         </p>
                     </div>
-                </li>
-            </ul>
-            <!-- Здесь будет форма -->
+        <!-- Здесь будет форма -->
         </section>
-
-        <section class="catalog">
+        <section class="catalog-page">
             <h2 class="visually-hidden">Моноподы для селфи</h2>
             <ul class="catalog-list">
                 <li class="catalog-item">
@@ -202,6 +205,8 @@
                 <li><button class="button catalog-button catalog-button-next" type="button">Вперед</button></li>
             </ul>
         </section>
+        </div>
+        </div>
     </main>
 
     <footer class="main-footer">
