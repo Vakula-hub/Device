@@ -716,53 +716,71 @@
     padding: 0;
 }
     /* Размечаем логотипы партнеров */
-    .partners-logo ul {
-        list-style: none;
-    }
-    .partners-logo .logo-1 {
-        background-color: #ffffff ;
-        opacity: 20%;
-        filter: grayscale(100%);
-    }
-    .partners-logo .logo-1:hover, 
-    .partners-logo .logo-1:focus {
-        filter: grayscale(0%);
-        background-color: #ffffff;
-        opacity: 100%;
-    }
-    .partners-logo .logo-2 {
-        filter: grayscale (100%);
-        background-color: #ffffff;
-        opacity: 20%;
-    }
-    .partners-logo .logo-2:hover, 
-    .partners-logo .logo-2:focus {
-        filter: grayscale (0%);
-        background-color: #ffffff;
-        opacity: 100%;
-    }
-    .partners-logo .logo-3 {
-        filter: grayscale (100%);
-        background-color: #ffffff;
-        opacity: 20%;
-    }
-    .partners-logo .logo-3:hover, 
-    .partners-logo .logo-3:focus {
-        filter: grayscale (0%);
-        background-color: #ffffff;
-        opacity: 100%;
-    }
-    .partners-logo .logo-4 {
-        filter: grayscale(100%);
-        background-color: #ffffff;
-        opacity: 20%;
-    }
-    .partners-logo .logo-4:hover, 
-    .partners-logo .logo-4:focus {
-        filter: grayscale (0%);
-        background-color: #ffffff;
-        opacity: 100%;
-    }
+    
+.partners-logo ul {
+    list-style: none;
+}
+.partners-logo .logo-1 {
+    background-color: #ffffff ;
+    opacity: 20%;
+    filter: grayscale(100%);
+}
+.partners-logo .logo-1:hover, 
+.partners-logo .logo-1:focus {
+    filter: grayscale(0%);
+    background-color: #ffffff;
+    opacity: 100%;
+}
+.partners-logo .logo-2 {
+    filter: grayscale (100%);
+    background-color: #ffffff;
+    opacity: 20%;
+}
+.partners-logo .logo-2:hover, 
+.partners-logo .logo-2:focus {
+    filter: grayscale (0%);
+    background-color: #ffffff;
+    opacity: 100%;
+}
+.partners-logo .logo-3 {
+    filter: grayscale (100%);
+    background-color: #ffffff;
+    opacity: 20%;
+}
+.partners-logo .logo-3:hover, 
+.partners-logo .logo-3:focus {
+    filter: grayscale (0%);
+    background-color: #ffffff;
+    opacity: 100%;
+}
+.partners-logo .logo-4 {
+    filter: grayscale(100%);
+    background-color: #ffffff;
+    opacity: 20%;
+}
+.partners-logo .logo-4:hover, 
+.partners-logo .logo-4:focus {
+    filter: grayscale (0%);
+    background-color: #ffffff;
+    opacity: 100%;
+}
+    /* РАЗМЕЧАЕМ ЛОГОТИПЫ ДЛЯ ПАРТНЕРОВ 2 */
+
+.partners-logo {
+    width: 1160px;
+    height: 100px;
+    margin: 0;
+    margin-bottom: 94px;
+    padding: 0;
+}
+.partners-logo .logo {
+display: flex;
+width: 1160px;
+height: 100px;
+margin: 0;
+padding: 0;
+justify-content: space-between;
+}
     /* размечаем контактную  информацию */
     .about-us ul {
         list-style: none;
@@ -1480,16 +1498,7 @@ a.arrow {
 
 
 
-/* РАЗМЕЧАЕМ ЛОГОТИПЫ ДЛЯ ПАРТНЕРОВ 2 */
-.partners-logo .logo {
-    display: flex;
-    width: 1160px;
-    height: 100px;
-    /* margin-top: 0px; */
-    margin-left: 140px;
-    padding: 0px;
-    justify-content: space-between;
-}
+
 /* Размечаем ABOUT-US */
 .company-information {
     display: flex;
