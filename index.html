@@ -58,110 +58,100 @@
     <main class="container">
         <h1 class="visually-hidden">Магазин техники DEVICE</h1>
         <!-- Здесь должен быть слайдер -->
-        <section class="slide-section">
-            <h2 class="visually-hidden">ТОП продаж</h2>
-            <div class="slide-navigation">
-                <form>
-                    <ul class="form">
-                    <li class="current1">
-                        <a href="#slider1">
-                            <input id="top1" type="radio" name="top" value="1" checked>
-                            <label for="top1"></label>
-                        </a>
-                    </li>
-                    <li class="current2">
-                        <a href="#slider2">
-                            <input id="top2" type="radio" name="top" value="2">
-                            <label for="top2"></label>
-                        </a>
-                    </li>
-                    <li class="current3">
-                        <a href="#slider3">
-                            <input id="top3" type="radio" name="top" value="3">
-                            <label for="top3"></label>
-                        </a>
-                    </li>
-                    </ul>
-                </form>
-            </div>
-            <div class="slide" id="slider1">
-                <div class="image">
-                    <img src="device\images\slider-1.png" width="384" height="486" alt="палка для селфи">
+        <h2 class="visually-hidden">ТОП продаж</h2>
+        <div class="slide-wrapper">
+                <input class="visually-hidden" id="top1" type="radio" name="top" checked>
+                <input class="visually-hidden" id="top2" type="radio" name="top">
+                <input class="visually-hidden" id="top3" type="radio" name="top">
+            <section class="slide-section">
+                <div class="slide-navigation">
+                    <label for="top1">top1</label>
+                    <label for="top2">top2</label>
+                    <label for="top3">top3</label>
                 </div>
-                <div class="info">
-                    <p class="slide-number">01</p>
-                    <h2>Делай селфи, <br>как Бен Стиллер!</h2>
-                    <p class="slide-text">
-                    Самая длинная палка для селфи доступна в нашем магазине. <br>
-                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                    </p>
-                    <p class="details layer">
-                        <a class="details" href="#">Подробнее</a>
-                    </p>
-                    <table class="slide-table">
-                        <tr class="slide-value">
-                            <td>8.5 м</td>
-                            <td>5 кг</td>
-                            <td>Карбон</td>
-                        </tr>
-                        <tr class="slide-feature">
-                            <td>Длина палки</td>
-                            <td>Вес палки</td>
-                            <td>Материал</td>
-                        </tr>
-                    </table>
+                <div class="slide" id="slider1">
+                    <div class="image">
+                        <img src="device\images\slider-1.png" width="384" height="486" alt="палка для селфи">
+                    </div>
+                    <div class="info">
+                        <p class="slide-number">01</p>
+                        <h2>Делай селфи, <br>как Бен Стиллер!</h2>
+                        <p class="slide-text">
+                        Самая длинная палка для селфи доступна в нашем магазине. <br>
+                        Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                        </p>
+                        <p class="details layer">
+                            <a class="details" href="#">Подробнее</a>
+                        </p>
+                        <table class="slide-table">
+                            <tr class="slide-value">
+                                <td>8.5 м</td>
+                                <td>5 кг</td>
+                                <td>Карбон</td>
+                            </tr>
+                            <tr class="slide-feature">
+                                <td>Длина палки</td>
+                                <td>Вес палки</td>
+                                <td>Материал</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
-            </div>
-
-            <div class="slide" id="slider2">
-                <p>
-                    <img src="device\images\slider-2.png" alt="фитнес браслет">
-                </p>
-                <p class="slide-number">02</p>
-                <h2>Худеем <br>
-                    правильно!!</h2>
-                <p class="slide-text">
-                    Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
-                    не пропускать занятия и соблюдать диету
-                </p>
-                <p class="details layer">
-                    <a class="details" href="#">Подробнее</a>
-                </p>
-                <table class="slide">
-                    <tr class="slide-value">
-                        <td>48 часов</td>                        
-                    </tr>
-                    <tr class="slide-feature">
-                        <td>Без подзарядки</td>                        
-                    </tr>
-                </table>
-            </div>
-            <div class="slide" id="slider3">
-                <p>
-                    <img src="device\images\slider-3.png" alt="квадракоптер">
-                </p>
-                <p class="slide-number">03</p>
-                <h2>Порхает как бабочка, <br>
-                    жалит как пчела!</h2>
-                <p class="slide-text">
-                    Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
-                    мощным лазером, замаскированным под стандартную камеру.
-                </p>
-                <p class="details layer">
-                    <a class="details" href="#">Подробнее</a>
-                </p>
-                <table class="slide">
-                    <tr class="slide-value">
-                        <td>800 м</td>
-                        <td>50 м</td>                       
-                    </tr>
-                    <tr class="slide-feature">
-                        <td>Дальность полета</td>
-                        <td>Радиус поражения</td>
-                    </tr>
-                </table>
-            </div>
-        </section>
+                <div class="slide" id="slider2">
+                    <div class="image">
+                        <img src="device\images\slider-2.png" alt="фитнес браслет">
+                    </div>
+                    <div class="info">
+                        <p class="slide-number">02</p>
+                        <h2>Худеем <br>правильно!!</h2>
+                        <p class="slide-text">
+                            Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
+                            не пропускать занятия и соблюдать диету
+                        </p>
+                        <p class="details layer">
+                            <a class="details" href="#">Подробнее</a>
+                        </p>
+                        <table class="slide-table">
+                            <tr class="slide-value">
+                                <td>48 часов</td>                        
+                            </tr>
+                            <tr class="slide-feature">
+                                <td>Без подзарядки</td>                        
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="slide" id="slider3">
+                    <div class="image">
+                        <img src="device\images\slider-3.png" alt="квадракоптер">
+                    </div>
+                    <div class="info">
+                        <p class="slide-number">03</p>
+                        <h2>Порхает как бабочка,<br>
+                        жалит как пчела!</h2>
+                        <p class="slide-text">
+                            Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
+                            мощным лазером, замаскированным под стандартную камеру.
+                        </p>
+                        <p class="details layer">
+                            <a class="details" href="#">Подробнее</a>
+                        </p>
+                        <table class="slide-table">
+                            <tr class="slide-value">
+                                <td>800 м</td>
+                                <td>50 м</td>
+                                <td> </td>                       
+                            </tr>
+                            <tr class="slide-feature">
+                                <td>Дальность полета</td>
+                                <td>Радиус поражения</td>
+                                <td> </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
         <section class="popular">
             <h2 class="visually-hidden">Популярное</h2>
             <ul class="popular-list">
@@ -209,7 +199,7 @@
             <div class="conteiner-service">
                 <ul class="service-list">
                     <li class="service-item">
-                        <a class="delivery" href="#delivery"><h3>Доставка</h3></a>
+                        <a class="delivery current" href="#delivery"><h3>Доставка</h3></a>
                     </li>
                     <li class="service-item">
                         <a class="warranty" href="#warranty"><h3>Гарантия</h3></a>
@@ -283,7 +273,7 @@
                     </ul>
                 </div>
                 <div class="details">
-                    <h3 class="details-about-us">Подробнее о нас</h3>
+                    <a class="details-about-us" href="#">Подробнее о нас</a>
                 </div>
             </section>
             <section class="contacts">
@@ -294,8 +284,8 @@
                        <img src="device\images\map.jpg" width="560" hight="222" alt="Маленькая карта проезда">
                     </a>
                 </p>
-                <div class="contacts-form">
-                    <h3 class="write-us">Напишите нам</h3>
+                <div class="details contacts-form">
+                    <a class="write-us" href="#">Напишите нам</a>
                 </div>
             <!-- Доллжен быть popup -->
             </section>
