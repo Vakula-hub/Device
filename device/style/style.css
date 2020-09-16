@@ -298,11 +298,7 @@
     /* Размечаем Main */
 
     /* Разметка и стиль для сладера */
-    /* .slide-navigation .current1,
-    .slide-navigation .current2,
-    .slide-navigation .current3 {
-        list-style: none;
-    } */
+
     .slide h2 {
         margin-block-start: 0;
         margin-block-end: 0;
@@ -316,6 +312,7 @@
         padding: 0;
         margin-top: 40px;
         margin-bottom: 8px;
+        z-index: 0;
     }
     .slide h2::before {
         display: block;
@@ -328,9 +325,6 @@
         padding: 0;
         margin-bottom: 30px;
     }
-    /* .slide a {
-        color: #000000;
-    } */
     .slide a.details {
         display: flex;
         font-family: "Gilroy", "Arial", sans-serif;
@@ -355,7 +349,6 @@
         z-index: -1;
     }
     .layer:hover .details::before {
-        /* display: block; */
         height: 40px;
     }
     .details:active a {
@@ -376,6 +369,8 @@
         line-height: 48px;
         margin: 0;
         padding: 0;
+        padding-right: 80px;
+        white-space: nowrap;
     }
     .slide .slide-feature td {
         font-family: "Open Sans", "Arial", sans-serif;
@@ -384,10 +379,9 @@
         line-height: 20px;
         margin: 0;
         padding: 0;
+        padding-right: 80px;
+        white-space: nowrap;
     }
-    /* #slider2, #slider3 {
-        display: none;
-    } */
 
     /*Сетка Slide в Main*/
 
@@ -411,7 +405,7 @@
     min-height: 12px;
     margin: 0;
     padding: 0;
-    margin-left: 1000px;
+    margin-left: 980px;
     margin-top: 310px;
     justify-content: space-between ;
     position: absolute;
@@ -422,22 +416,24 @@
     width: 500px;
     min-height: 486px;
     margin: 0;
-    margin-left: 126px;
     padding: 0px;
-    /* margin-top: 35px; */
 }
 .slide p.slide-number {
     display: flex;
     margin: 0;
     padding: 0;
-    margin-left: 330px;
+    margin-left: 300px;
     position: absolute;
     margin-top: -25px;
 }
 .slide .image {
-    margin-left: 90px;
-    width: 384px;
-    height: 486px;
+    display: flex;
+    width: 600px;
+    min-height: 486px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
 }
 .slide-text {
     display: inline-block;
@@ -449,19 +445,23 @@
     margin-bottom: 47px;
 }
 .slide .details {
+    width: 220px;
     margin-block-end: 0;
     margin-block-start: 0;
     margin-bottom: 63px;
 }
 .slide-table {
+    border-collapse: collapse;
     margin: 0;
     padding: 0;
-    width: 560px;
+    width: fit-content;
     height: 65px;
-    border-spacing: 0;
-    /* margin-bottom: 117px; */
 }
-    /* Размечаем Popular-list */
+.slide-table tr {
+    /* width: fit-content;    */
+}
+
+/* Размечаем Popular-list */
 .popular {
     width: 1160px;
     height: 280px;
@@ -1819,19 +1819,19 @@ a.arrow {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-  position: absolute;
+    position: absolute;
 
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
-  white-space: nowrap;
+    white-space: nowrap;
 
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 .slide {
     display: none;
@@ -1839,5 +1839,5 @@ input[type="radio"].visually-hidden {
 #top1:checked ~ .slide-section #slider1,
 #top2:checked ~ .slide-section #slider2,
 #top3:checked ~ .slide-section #slider3 {
-  display: flex;
+    display: flex;
 }
