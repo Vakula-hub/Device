@@ -60,14 +60,14 @@
         <!-- Здесь должен быть слайдер -->
         <h2 class="visually-hidden">ТОП продаж</h2>
         <div class="slide-wrapper">
-                <input class="visually-hidden" id="top1" type="radio" name="top" checked>
-                <input class="visually-hidden" id="top2" type="radio" name="top">
-                <input class="visually-hidden" id="top3" type="radio" name="top">
+                <input class="visually-hidden slider-input" id="top1" type="radio" name="top" checked>
+                <input class="visually-hidden slider-input" id="top2" type="radio" name="top">
+                <input class="visually-hidden slider-input" id="top3" type="radio" name="top">
             <section class="slide-section">
                 <div class="slide-navigation">
-                    <label for="top1">top1</label>
-                    <label for="top2">top2</label>
-                    <label for="top3">top3</label>
+                    <label class="slide-navigation-input" for="top1">top</label>
+                    <label class="slide-navigation-input" for="top2">top</label>
+                    <label class="slide-navigation-input" for="top3">top</label>
                 </div>
                 <div class="slide" id="slider1">
                     <div class="image">
@@ -193,22 +193,20 @@
             </ul>
         </section>
        <!-- Дальше должен быть слайдер -->
-        <section class="service">
-            <h2 class="visually-hidden">Сервис</h2>
-            <div class="conteiner-service">
-                <ul class="service-list">
-                    <li class="service-item">
-                        <a class="delivery current" href="#delivery"><h3>Доставка</h3></a>
-                    </li>
-                    <li class="service-item">
-                        <a class="warranty" href="#warranty"><h3>Гарантия</h3></a>
-                    </li>
-                    <li class="service-item">
-                        <a class="credit" href="#credit"><h3>Кредит</h3></a>
-                    </li>
-                </ul>
+        
+        <div class="service-wrapper">
+                <h2 class="visually-hidden">Сервис</h2>
+                <input class="visually-hidden" type="radio" id="service1" name="toggle"checked>
+                <input class="visually-hidden" type="radio" id="service2" name="toggle">
+                <input class="visually-hidden" type="radio" id="service3" name="toggle">
+            <section class="service">
+                <div class="service-list">
+                    <label class="service-item delivery" for="service1"><h3>Доставка</h3></label>
+                    <label class="service-item warranty" for="service2"><h3>Гарантия</h3></label>
+                    <label class="service-item credit" for="service3"><h3>Кредит</h3></label>
+                </div> 
                 <div class="service-flex">
-                    <div class="delivery" id="delivery">
+                    <div class="service-block delivery" id="delivery">
                         <div class="service-info">
                             <h2>Доставка</h2>
                             <p class="text">
@@ -220,7 +218,7 @@
                             <img src="device\svg\delivery.svg" width="136" height="164" alt="Доставка">
                         </p>
                     </div>
-                    <div class="warranty" id="warranty">
+                    <div class="service-block warranty" id="warranty">
                         <div class="service-info">
                             <h2>Гарантия</h2>
                             <p class="text">
@@ -232,7 +230,7 @@
                         <img src="device\svg\warranty.svg" width="171" hight="195" alt="Гарантия">
                         </p>
                     </div>
-                    <div class="credit" id="credit">
+                    <div class="service-block credit" id="credit">
                         <div class="service-info">
                             <h2>Кредит</h2>
                             <p class="text">
@@ -245,8 +243,9 @@
                         </p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+        
         <section class="partners-logo"> <!-- Разметил Флексом 21.07.20 --> 
             <ul class="logo">
                 <li class="logo-1"><img src="device\images\logo-1.png" width="260" height="100" alt="Логотип DJI"></li>
