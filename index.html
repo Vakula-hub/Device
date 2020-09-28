@@ -289,7 +289,6 @@
             </section>
         </div>
     </main>
-
     <footer class="main-footer">
         <div class="first-column">
             <a class="main-footer-logo">
@@ -333,31 +332,28 @@
             </p>
         </div>
     </footer>
-
         <section class="modal modal-login">
-            <h2 class="visually-hidden">Личный кабинет</h2>
-            <form class="login-form" action="#" method="POST">
-                <div class="login">
+            <h2>Личный кабинет</h2>
+            <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
+            <form class="login-form" action="#" method="post">
                     <p>
-                        <label class="icon-user" for="login">Логин</label><br>
+                        <label class="visually-hidden icon-user" for="login">Логин</label>
                         <input class="login-icon-user" id="login" type="text" name="login" placeholder="email или номер моб.тел." size="24">
                     </p>
                     <p>
-                        <label class="icon-password" for="password">Пароль</label><br>
+                        <label class="visually-hidden icon-password" for="password">Пароль</label>
                         <input class="login-icon-password" id="password" type="password" name="password" placeholder="Пароль минимум 8 знаков" size="24" min=8>
                     </p>
                     <p class="login-password-info">
                         <label class="login-checkbox"> <!--Контейнер для будующей иконки выбора-->
-                        <input class="visyally-hidden" type="checkbox" name="remember">
+                        <input class="visually-hidden" type="checkbox" name="remember">
                         <span class="checkbox-indicator"></span>
                         Запомните меня
                         </label>
                         <a class="restore" href="#">Я забыл пароль</a>
                     </p>
-                    <button class="button" type="submit">Вход</button>
-                </div>
+                    <button class="login-form-button" type="submit">Вход</button>
             </form>
-            <!-- Здесь будет форма -->
             <button class="modal-close" type="button">Закрыть</button>
         </section>
         
