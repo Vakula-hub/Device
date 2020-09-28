@@ -1170,6 +1170,7 @@ justify-content: space-between;
     font-size: 18px;
     font-weight: bold;
     line-height: 24px;
+    position: fixed;
 }
 .modal a {
     color: #000000;
@@ -1178,13 +1179,8 @@ justify-content: space-between;
     font-weight: lighter;
     line-height: 18px;
 }
-.modal a:hover,
-.modal a:focus {
-    color: darkred;
-    font-weight: bold;
-}
-.modal input,
-.modal textarea {
+
+.modal input {
     border: none;
     background-color: #f2f2f2;
 }
@@ -1194,6 +1190,8 @@ justify-content: space-between;
     border: none;
     box-shadow: 10px 10px 20px #00000020, -10px 10px 20px #00000020;
 }
+/* модалка обратной связи*/
+
 .write-us input {
     width: 360px;
     height: 50px
@@ -1205,11 +1203,14 @@ justify-content: space-between;
 .modal table {
     border-spacing: 40px;
 }
-[placeholder] {
+.write-us-form [placeholder] {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: lighter;
     line-height: 18px;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 10px 15px;
     color: #464646;
 }
 .write-us-form .button {
@@ -1229,36 +1230,183 @@ justify-content: space-between;
 .write-us-form:hover .button::before {
     height: 40px;
 }
-.login-form {
+
+/* форма для личного кабинета */
+
+.modal-login {
+    top: 120px;
+    left: 50%;
     background-color: inherit;
-    width: 280px;
-    height: 230px;
+    width: 300px;
+    margin-left: -230px;
+    padding: 50px 80px;
     box-shadow: 10px 10px 20px #00000020, -10px 10px 20px #00000020;
 }
-.login .login-checkbox {
+.modal-login h2 {
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 42px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.modal-description {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+    white-space: nowrap;
+}
+.login-form p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+.login-form input[placeholder] {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: lighter;
+    line-height: 18px;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    padding-right: 40px;
+}
+.login-icon-user {
+    background-image: url("../svg/user.svg");
+    background-position: 270px center;
+    background-repeat: no-repeat;
+  }
+  
+.login-icon-password {
+    background-image: url("../svg/lock.svg");
+    background-position: 270px center;
+    background-repeat: no-repeat;
+  }
+.login-checkbox {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 14px;
     line-height: 18px;
     color: #464646;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
 }
-.login .button {
+.login-checkbox:hover,
+.login-checkbox:focus {
+    color: #663d15;
+}
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #000000;
+}
+.login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 1px;
+    width: 12px;
+    height: 2px;
+    background-color: #000000;
+}
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+    transform: rotate(45deg);
+}
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    transform: rotate(-45deg);
+}
+.login-password-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.restore:hover,
+.restore:focus {
+    color: darkred;
+    font-weight: bold;
+}
+.login-form-button {
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 40px;
     font: inherit;
-    background-color: #ffffff;
+    background-color: transparent;
     letter-spacing: 5px;
     text-transform: uppercase;
     border: none;
+    margin: 0 50px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
 }
-.login .button::before {
+.login-form-button:active {
+    color: #00000030;
+}
+.login-form-button::before {
     content: " ";
     width: 200px;
     height: 8px;
     background-color: #f0c52e;
     position: absolute;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
 }
-.login:hover .button::before {
+.login-form-button:hover::before {
     height: 40px;
 }
+/*СТИЛИЗАЦИЯ КНОПКИ ЗАКРЫТИЯ*/
+
+.modal-close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 55px;
+    height: 55px;
+    font-size: 0px;
+    background-color: #f7e296;
+    border: 0px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.modal-close:hover {
+    background-color: #f0c52e;
+}
+.modal-close:active {
+    background-color: #faedc0;
+}
+.modal-close::before,
+.modal-close::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top: 25px;
+    right: 12px;
+    background-color: #ffffff;
+}
+.modal-close::before {
+    transform: rotate(45deg);
+}
+.modal-close::after {
+    transform: rotate(-45deg);
+}
+
+/*МОДАЛКА ПОИСКА*/
+
 .modal .search {
     background-color: inherit;
     width: 200px;
