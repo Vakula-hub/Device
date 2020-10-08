@@ -6,7 +6,7 @@ body {
     padding-right: 20px;
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: normal;
     line-height: 30px;
     color: #000000;
     background-color: #ffffff;
@@ -84,13 +84,6 @@ a {
     padding: 0;
     z-index: -1;
 }
-.main-navigation .user-navigation .search.current {
-    color: #00000030;
-}
-.main-navigation .user-navigation .search.current:hover,
-.main-navigation .user-navigation .search.current:focus {
-    color: #00000060;
-}
 .main-navigation .user-navigation {
     max-width: 1040px;
     height: 30px;
@@ -115,25 +108,94 @@ a {
 .main-navigation .user-navigation li:nth-child(4n) {
     width: 100px;
 }
-    /* добавляем в падинги иконки */
-.main-navigation .user-navigation a.search {
-    display: block;
-    padding-left: 40px;
+
+
+/*МОДАЛКА ПОИСКА*/
+.search form { 
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: inherit;
+    background-image: url('../svg/search.svg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    text-align: center;
+    width: 400px;
+    height: 30px;
+    margin: 0;
     position: relative;
+    z-index: 2;
 }
-.main-navigation .user-navigation a.search::before {
-    content: " ";
-    width: 16px;
-    height: 16px;
-    background-image: url("../svg/search.svg");
+.search input {
+    box-sizing: border-box;
+    font: inherit;
+    width: 315px;
+    padding: 0;
+    padding-left: 40px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    background: transparent;
+    transition: .4s cubic-bezier(0, 0.8, 0, 1);
     position: absolute;
-    left: 0px;
-    top: 7px;        
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s; /*делает прозрачным фон при автозаполнении*/
+}
+.search input:hover::placeholder {
+    color: #00000060;
+}
+.search input:focus {
+    z-index: 2;
+    border-bottom: 2px solid #000000;
+    background-color: transparent;
+}
+
+.search .search-button {
+    display: none;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    /* line-height: 30px; */
+    background-color: inherit;
+    width: 85px;
+    height: 50px;
+    border: 2px solid #000000;
+    position: absolute;
+    bottom: -2px;
+    right: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+.search input:focus ~ .search-button {
+    display: block;
+} 
+.search input:focus ~ .search {
+    border-bottom: 20px solid #000000;
+    z-index: 5;
+}
+.search .search-button:hover,
+.search .search-button:focus {
+    color:#ffffff;
+    background-color: #000000;
+}
+.search .search-button:active {
+    display: block;
+    color: #ffffff30;
+    background-color: #000000;
+}
+
+/* добавляем в падинги иконки */
 .main-navigation .user-navigation a.login-link {
     display: block;
     padding-left: 25px;
-    position: relative;    }
+    position: relative;
+}
 .main-navigation .user-navigation a.login-link::before {
     content: " ";
     width: 13px;
@@ -219,7 +281,7 @@ a {
     width: 120px;
 }
     
-    /* делаем выпадающее меню */
+/* делаем выпадающее меню */
 li.catalog ul.submenu {
     display: none;
 }
@@ -284,10 +346,10 @@ li.catalog ul.submenu {
     min-width: 200px;
     height: 131px;
 }
-    /* Размечаем Main */
 
-    /* Разметка и стиль для сладера */
+/* Размечаем Main */
 
+/* Разметка и стиль для сладера */
 .slide h2 {
     margin-block-start: 0;
     margin-block-end: 0;
@@ -372,8 +434,7 @@ li.catalog ul.submenu {
     white-space: nowrap;
 }
 
-    /*Сетка Slide в Main*/
-
+/*Сетка Slide в Main*/
 .slide-wrapper {
     display: flex;
     max-width: 1160px;
@@ -399,9 +460,10 @@ li.catalog ul.submenu {
     margin-top: 315px;
     justify-content: space-between ;
     position: absolute;
+    white-space: nowrap;
 }
-/* Стилизация Радиобатонов*/
 
+/* Стилизация Радиобатонов*/
 .slide-navigation label::before {
     display: inline-block;
     content: "";
@@ -415,8 +477,7 @@ li.catalog ul.submenu {
     margin: 0;
     padding: 0;
 }
-
-#top1:checked ~ .slide-section label[for="top1"]:after, 
+#top1:checked ~ .slide-section label[for="top1"]::after, 
 #top2:checked ~ .slide-section label[for="top2"]::after,
 #top3:checked ~ .slide-section label[for="top3"]::after {
     display: inline-block;
@@ -714,8 +775,8 @@ li.catalog ul.submenu {
     margin-left: 121px;
     padding: 0;
 }
-    /* Размечаем логотипы партнеров */
-    
+   
+/* Размечаем логотипы партнеров */
 .partners-logo ul {
     list-style: none;
 }
@@ -763,8 +824,8 @@ li.catalog ul.submenu {
     background-color: #ffffff;
     opacity: 100%;
 }
-    /* РАЗМЕЧАЕМ ЛОГОТИПЫ ДЛЯ ПАРТНЕРОВ 2 */
 
+/* РАЗМЕЧАЕМ ЛОГОТИПЫ ДЛЯ ПАРТНЕРОВ 2 */
 .partners-logo {
     width: 1160px;
     height: 100px;
@@ -780,8 +841,8 @@ margin: 0;
 padding: 0;
 justify-content: space-between;
 }
-    /* размечаем контактную  информацию */
-
+    
+/* размечаем контактную  информацию */
 .company-information {
     display: flex;
     width: 1160px;
@@ -837,8 +898,7 @@ justify-content: space-between;
     /* text-align: justify; */
 }
 .about-us p.text-2 {
-    /* width: 103%; */
-    word-spacing: -1.5px;
+    width: 107%;
     margin-top: 30px;
     margin-bottom: 70px;
 }
@@ -896,41 +956,41 @@ justify-content: space-between;
     position: absolute;
     z-index: -1;
 } 
-    .contacts h2 {
-        font-family: "Gilroy", "Arial", sans-serif;
-        font-size: 47px;
-        font-weight: bold;
-        line-height: 48px;
-        width: 220px;
-        height: 103px;
-        margin: 0%;
-        margin-bottom: 53px;
-        padding: 0;
-    }
-    .contacts h2::before {
-        content: " ";
-        display: block;
-        width: 80px;
-        height: 7px;
-        background-color: #000000;
-        margin-bottom: 50px;
-        padding: 0px;
-    }
-    .contacts p.text {
-        color: #464646;
-        width: 562px;
-        min-height: 50px;
-        margin: 0;
-        margin-bottom: 45px;
-        padding: 0;
-    }
-    .contacts .image {
-        width: 560px;
-        height: 222px;
-        margin: 0;
-        margin-bottom: 80px;
-        padding: 0;
-    }
+.contacts h2 {
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-size: 47px;
+    font-weight: bold;
+    line-height: 48px;
+    width: 220px;
+    height: 103px;
+    margin: 0%;
+    margin-bottom: 53px;
+    padding: 0;
+}
+.contacts h2::before {
+    content: " ";
+    display: block;
+    width: 80px;
+    height: 7px;
+    background-color: #000000;
+    margin-bottom: 50px;
+    padding: 0px;
+}
+.contacts p.text {
+    color: #464646;
+    width: 562px;
+    min-height: 50px;
+    margin: 0;
+    margin-bottom: 45px;
+    padding: 0;
+}
+.contacts .image {
+    width: 560px;
+    height: 222px;
+    margin: 0;
+    margin-bottom: 80px;
+    padding: 0;
+}
 .contacts .details {
     width: 260px;
 }
@@ -962,9 +1022,9 @@ justify-content: space-between;
     align-items: center;
     z-index: -1;
 }
-    .contacts-form:hover .write-us::before {
-        height: 40px;
-    }
+.contacts-form:hover .write-us::before {
+    height: 40px;
+}
 
     /* Размечаем FOOTER  */
 .main-footer ul {
@@ -1184,50 +1244,82 @@ justify-content: space-between;
     border: none;
     background-color: #f2f2f2;
 }
-.modal fieldset {
-    width: 960px;
-    height: 553px;
+
+/* модалка обратной связи*/
+.modal-write-us {
+    width: 760px;
+    height: 355px;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    margin-left: -480px;
+    margin-top: -275px;
+    padding: 100px 100px;
+    background-color: inherit;
     border: none;
     box-shadow: 10px 10px 20px #00000020, -10px 10px 20px #00000020;
+    display: none;
 }
-/* модалка обратной связи*/
-
-.write-us input {
+.write-us-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.write-us-form p {
+    margin: 0;
+    margin-bottom: 37px;
     width: 360px;
-    height: 50px
+    white-space: wrap;
 }
-.write-us textarea {
+.write-us-form span {
+    display: block;
+    width: 360px;
+    margin: 0;
+    margin-bottom: 13px;
+}
+.write-us-form textarea {
+    /* display: block; */
     width: 760px;
     height: 156px;
 }
-.modal table {
-    border-spacing: 40px;
-}
-.write-us-form [placeholder] {
+.write-us-form input[placeholder] {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: lighter;
     line-height: 18px;
-    width: 300px;
+    width: 360px;
+    height: 50px;
     box-sizing: border-box;
     padding: 10px 15px;
     color: #464646;
 }
-.write-us-form .button {
+.write-us-button {
+    display: flex;
     font: inherit;
     background-color: #ffffff;
     letter-spacing: 5px;
     text-transform: uppercase;
     border: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 40px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
-.write-us-form .button::before {
+.write-us-button::before {
     content: " ";
+    /* display: block; */
     width: 200px;
     height: 8px;
     background-color: #f0c52e;
     position: absolute;
+    /* align-items: center; */
+    z-index: -1;
 }
-.write-us-form:hover .button::before {
+.write-us-button:hover::before {
     height: 40px;
 }
 
@@ -1241,6 +1333,8 @@ justify-content: space-between;
     margin-left: -230px;
     padding: 50px 80px;
     box-shadow: 10px 10px 20px #00000020, -10px 10px 20px #00000020;
+
+    display: none;
 }
 .modal-login h2 {
     margin: 0;
@@ -1276,13 +1370,12 @@ justify-content: space-between;
     background-image: url("../svg/user.svg");
     background-position: 270px center;
     background-repeat: no-repeat;
-  }
-  
+}
 .login-icon-password {
     background-image: url("../svg/lock.svg");
     background-position: 270px center;
     background-repeat: no-repeat;
-  }
+}
 .login-checkbox {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
@@ -1368,8 +1461,8 @@ justify-content: space-between;
 .login-form-button:hover::before {
     height: 40px;
 }
-/*СТИЛИЗАЦИЯ КНОПКИ ЗАКРЫТИЯ*/
 
+/*СТИЛИЗАЦИЯ КНОПКИ ЗАКРЫТИЯ*/
 .modal-close {
     position: absolute;
     top: 22px;
@@ -1405,33 +1498,25 @@ justify-content: space-between;
     transform: rotate(-45deg);
 }
 
-/*МОДАЛКА ПОИСКА*/
+/* МОДАЛКА КАРТА */
+.modal-map {
+    top: 50%;
+    left: 50%;
+  
+    width: 960px;
+    height: 560px;
+    margin-top: -280px;
+    margin-left: -480px;
+    
+    border: 7px solid white;
+    
+    display: none;
+}
+.modal-map p {
+    margin: 0;
+}
 
-.modal .search {
-    background-color: inherit;
-    width: 200px;
-    height: 200px;
-    box-shadow: 10px 10px 20px #00000020, -10px 10px 20px #00000020;
-}
-.search .button {
-    font-family: "Open Sans", "Arial", sans-serif;
-    font-size: 15px;
-    font-weight: lighter;
-    line-height: 30px;
-    background-color: #ffffff;
-    width: 85px;
-    height: 49px;
-    border: 2px solid #000000;
-}
-.search .button:hover,
-.search .button:focus {
-    color:#ffffff;
-    background-color: #000000;
-}
-.search .button:active {
-    color: #ffffff70;
-    background-color: #000000;
-}
+
 /* Стилизация Каталога */
 .inner-page .main-navigation::before {
     content: "";
@@ -1834,11 +1919,6 @@ a.arrow {
 }
 
 /*РАЗМЕЧАЕМ СЕТКУ*/
-
-
-
-
-
 
 
 /* Размечаем страницу каталога как Flex */
