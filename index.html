@@ -15,14 +15,16 @@
         <nav class="main-navigation">
             <div class="user-navigation">
                 <ul class="main-header-navigation user-navigation">
-                    <li class="search current"><a class="search" href="search.html">Поиск по сайту</a>
+                    <li class="search current">
+                            <form>
+                                <label class="visually-hidden user-search" for="user-search">Введите запрос</label>
+                                <input id="user-search" type="text" name="usersearch" size="24" placeholder="Поиск по сайту">
+                                <button class="search-button" type="submit">Найти</button>
+                            </form>
                     </li>
-                    <li class="login-link"><a class="login-link" href="login.html">Войти</a>
-                    </li>
-                    <li class="compare"><a class="compare" href="compare.html">Сравнить</a>
-                    </li>
-                    <li class="cart"><a class="cart" href="cart.html">Корзина</a>
-                    </li>                
+                    <li class="login-link"><a class="login-link" href="login.html">Войти</a></li>
+                    <li class="compare"><a class="compare" href="compare.html">Сравнить</a></li>
+                    <li class="cart"><a class="cart" href="cart.html">Корзина</a></li>                
                 </ul>
             </div>
             <div class="site-navigation">
@@ -278,18 +280,17 @@
                 <h2>Контакты</h2>
                 <p class="text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                 <p class="image">
-                    <a class="big-map" href="device\images\map-big.jpg">
-                       <img src="device\images\map.jpg" width="560" hight="222" alt="Маленькая карта проезда">
-                    </a>
+                    <a class="big-map" href="map.html"><img src="device\images\map.jpg" width="560" hight="222" alt="Карта проезда"></a>
                 </p>
                 <div class="details contacts-form">
-                    <a class="write-us" href="#">Напишите нам</a>
+                    <a class="button write-us" href="contacts.html">Напишите нам</a>
                 </div>
             <!-- Доллжен быть popup -->
             </section>
         </div>
     </main>
     <footer class="main-footer">
+
         <div class="first-column">
             <a class="main-footer-logo">
             <img src="device\images\logo-footer.png" width="166px" height="35px" alt="Логотип Device">
@@ -332,6 +333,7 @@
             </p>
         </div>
     </footer>
+        <!-- ЛИЧНЫЙ КАБИНЕТ -->
         <section class="modal modal-login">
             <h2>Личный кабинет</h2>
             <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
@@ -357,62 +359,36 @@
             <button class="modal-close" type="button">Закрыть</button>
         </section>
         
+        <!-- ОБРАТНАЯ СВЯЗЬ -->
         <section class="modal modal-write-us">
             <h2 class="visually-hidden">Напишите нам</h2>
-        <div class="write-us">
-            <fieldset>
+        
             <form class="write-us-form" action="#" method="GET">
-                    <table>
-                        <tr>
-                            <td>
-                                <p>
-                                    <label for="user-field-id">Ваше имя:</label><br>
-                                    <input id="user-field-id" type="text" name="username" placeholder="Имя Фамилия">
-                                </p> 
-                            </td>
-                            <td>
-                                <p>
-                                    <label for="user-mail-id">Ваш email:</label><br>
-                                    <input id="user-mail-id" type="text" name="usermail" placeholder="email@example.com">
-                                </p>
-                            </td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <td>
-                                <p>
-                                    <label for="user-letter-id">Текст письма:</label><br>
-                                    <textarea id="user-letter-id" type="text" name="user-letter" placeholder="В свободной форме"></textarea>
-                                </p>
-                            </td>
-                            <td><p></p></td>
-                        </tr>
-                    </table>
-                        <p>
-                            <button class="button" type="submit">Отправить</button>
-                        </p>
+                <div class="write-us-container">
+                <p>
+                    <span>Ваше имя</span>
+                    <label class="visually-hidden" for="user-field-id">Ваше имя:</label>
+                    <input id="user-field-id" type="text" name="username" placeholder="Имя Фамилия">
+                </p> 
+                <p>
+                    <span>Ваш email:</span>
+                    <label class="visually-hidden" for="user-mail-id">Ваш email:</label>
+                    <input id="user-mail-id" type="text" name="usermail" placeholder="email@example.com">
+                </p>
+                <p>
+                    <span>Текст письма</span>
+                    <label class="visually-hidden" for="user-letter-id">Текст письма:</label>
+                    <textarea id="user-letter-id" type="text" name="user-letter" placeholder="В свободной форме"></textarea>
+                </p>
+                </div>
+                <button class="write-us-button" type="submit">Отправить</button>
             </form>
            <!-- Здесь будет форма -->
            <button class="modal-close" type="button">Закрыть</button>
-        </fieldset>
         </div>
         </section>
         
-        <section class="modal modal-search">
-            <h2 class="visually-hidden">Поиск по сайту</h2>
-            <form>
-                <div class="search">
-                    <p>
-                        <label class="user-search" for="user-search">Введите запрос</label><br>
-                        <input id="user-search" type="search" name="usersearch" size="24" placeholder="Что ищем?">
-                    </p>
-                    <button class="button" type="submit">Найти</button>
-                </div>
-            </form>
-            <!-- Здесь будет форма -->
-            <button class="modal-close" type="button">Закрыть</button>
-        </section>
+        
 
         <section class="modal modal-compare">
             <h2 class="visually-hidden">Сравнить</h2>
@@ -427,11 +403,12 @@
             <!-- Здесь будет форма -->
             <button class="modal-close" type="button">Закрыть</button>
         </section>
-
+    
+        <!-- КАРТА  -->
         <section class="modal modal-map">
             <h2 class="visually-hidden">Как до нас добраться</h2>
             <p>
-                <img src="device\images\map.jpg" width="560" hight="222" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
+                <img src="./device/images/map-big.jpg" width="960" hight="560" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
             </p>
             <button class="modal-close" type="button">Закрыть</button>
         </section>
