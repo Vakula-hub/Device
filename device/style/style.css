@@ -15,8 +15,7 @@ body {
     background-repeat: repeat;
 }
     
-    /* Размечаем Header */
-    
+/* Размечаем Header */
 .main-header {
     max-width: 1160px;
     height: 300px;
@@ -24,7 +23,6 @@ body {
     padding: 0;
 }
 .main-header-logo {
-    /* display: flex; */
     width: 168px;
     height: 35px;
     margin-top: -19px;
@@ -109,7 +107,6 @@ a {
     width: 100px;
 }
 
-
 /*МОДАЛКА ПОИСКА*/
 .search form { 
     display: inline-block;
@@ -155,7 +152,6 @@ input:-webkit-autofill:active {
     border-bottom: 2px solid #000000;
     background-color: transparent;
 }
-
 .search .search-button {
     display: none;
     font-family: "Open Sans", "Arial", sans-serif;
@@ -221,7 +217,7 @@ input:-webkit-autofill:active {
 }
 .main-navigation .user-navigation a.cart {
     display: block;
-    padding-left: 40px;
+    padding-left: 35px;
     position: relative;
 }
 .main-navigation .user-navigation a.cart::before {
@@ -230,7 +226,7 @@ input:-webkit-autofill:active {
     height: 12px;
     background-image: url("../svg/cart.svg");
     position: absolute;
-    left: 17px;
+    left: 15px;
     top: 9px;
 }
 .main-navigation .site-navigation {
@@ -685,13 +681,13 @@ li.catalog ul.submenu {
 }
     /* Подложка на всю ширину */
 .service::before {
-    content: " ";
+    content: " "; 
     background-color: #e5e5e5;
     position: absolute;
-    width: 100%;
+    min-width: 1445px; 
     height: 288px;
-    left: 0;
-    margin: 0;
+    /* left: 0; */
+    margin-left: -120px;
     margin-top: 100px;
     padding: 0;
     z-index: -1;
@@ -1038,11 +1034,12 @@ justify-content: space-between;
 }
 .main-footer::before {
     content: "";
-    width: 100%;
+    width: 1445px;
     height: 323px;
     background-color: #464646;
     position: absolute;
-    left: 0;
+    /* left: 0; */
+    margin-left: -120px;
     z-index: -1;    
 }
 .main-footer .footer-contact-adress,
@@ -1050,7 +1047,7 @@ justify-content: space-between;
     width: 261px;
     height: 22px;
 }
-.main-footer-navigation .main-footer-navigation{
+.main-footer-navigation{
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     font-weight: bold;
@@ -1063,8 +1060,6 @@ justify-content: space-between;
     font-size: 15px;
     font-weight: normal;
     line-height: 36px;
-    /* width: 330px; */
-    /* height: 16px; */
 }
 .main-footer .footer-social {
     opacity: 30%;
@@ -1117,7 +1112,7 @@ justify-content: space-between;
     padding: 0;
     align-items: center;
 }
-.main-footer-navigation .main-footer-navigation {
+.main-footer-navigation {
     display: flex;
     width: 423px;
     height: 20px;
@@ -1126,7 +1121,7 @@ justify-content: space-between;
     padding: 0;
     padding-top: 142px;
 }
-.footer-social ul {
+.footer-social {
     display: flex;
     width: 150px;
     height: 32px;
@@ -1144,7 +1139,7 @@ justify-content: space-between;
     padding: 0;
     align-items: flex-end;
 }
-.main-footer-navigation .user-navigation {
+.user-footer-navigation {
     display: flex;
     width: 330px;
     height: 36px;
@@ -1168,7 +1163,7 @@ justify-content: space-between;
     height: 12px;
     position: absolute;
     left: 0px;
-    top: 12px;
+    top: 9px;
 }
 .user-footer-navigation li.compare {
     width: 90px;
@@ -1185,7 +1180,7 @@ justify-content: space-between;
     height: 10px;
     position: absolute;
     left: 0px;
-    top: 13px;
+    top: 10px;
 }
 .user-footer-navigation li.cart {
     width: 80px;
@@ -1202,7 +1197,7 @@ justify-content: space-between;
     height: 12px;
     position: absolute;
     left: 0px;
-    top: 12px;
+    top: 9px;
 }
 .footer-contact-tel {
     margin: 0;
@@ -1324,7 +1319,6 @@ justify-content: space-between;
 }
 
 /* форма для личного кабинета */
-
 .modal-login {
     top: 120px;
     left: 50%;
@@ -1333,7 +1327,6 @@ justify-content: space-between;
     margin-left: -230px;
     padding: 50px 80px;
     box-shadow: 10px 10px 20px #00000020, -10px 10px 20px #00000020;
-
     display: none;
 }
 .modal-login h2 {
@@ -1516,8 +1509,18 @@ justify-content: space-between;
     margin: 0;
 }
 
-
 /* Стилизация Каталога */
+.inner-page .main-header {
+    width: 1160px;
+    height: 186px;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+}
+.inner-page .main-navigation {
+    width: 1040px;
+    height:186px;
+}
 .inner-page .main-navigation::before {
     content: "";
     background-color: #f7e296;
@@ -1525,7 +1528,7 @@ justify-content: space-between;
     height: 186px;
     position: absolute;
     /* margin-left: 140px; */
-    margin-top: 40px;
+    /* margin-top: 40px; */
     z-index: -1;
 }
 .page-title {
@@ -1535,6 +1538,9 @@ justify-content: space-between;
     line-height: 48px;
     color: #000000;
     background-color: #ffffff;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
 }
 .breadcrumbs {
     list-style: none;
@@ -1557,11 +1563,33 @@ justify-content: space-between;
 .breadcrumbs-current {
     color: #00000030;
 }
+.inner-page .page-title-breadcrumbs {
+    width: 1044px;
+    height: 125px;
+    margin: 0;
+    margin-bottom: 17px;
+    padding: 0;
+    padding-left: 60px;
+}
+.inner-page .breadcrumbs {
+    display: flex;
+    width: 383px;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+}
+.main-filters,
+.filter-option,
+.sorting-filters {
+    list-style: none;
+}
 .inner-page .filters::before {
     content: "";
     background-color: #00000008;
-    width: 1534px;
+    width: 1440px;
     height: 70px;
+    margin-left: -140;
     position: absolute;
     z-index: -1;
 }
@@ -1578,6 +1606,7 @@ justify-content: space-between;
     padding-left: 0px;
     z-index: -1;
 }
+
 .filters fieldset {
     border: none;
 }
@@ -1592,11 +1621,7 @@ fieldset legend::before {
     margin-top: 0px;
     padding: 0px;
 }
-.main-filters,
-.filter-option,
-.sorting-filters {
-    list-style: none;
-}
+
 p.filter {
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 16px;
@@ -1639,22 +1664,36 @@ p.filter {
 }
 .filter-button {
     border: none;
-    background-color: #ffffff;
+    background-color: transparent;
 }
 .filter-button h3 {
+    display: flex;
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     font-weight: bold;
-    line-height: auto;
+    line-height: 20px;
     letter-spacing: 5px;
     text-transform: uppercase;
+    margin: 0;
+    margin-left: 60px;
+    padding: 0;
+    width: 200px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
 }
 .filter-button h3::before {
+    display: block;
     content: " ";
     background-color: #f0c52e;
     position: absolute;
-    width: 220px;
+    width: 200px;
     height: 8px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
 }
 .filter-button:hover h3::before {
     display: block;
@@ -1765,32 +1804,46 @@ a.arrow {
 }
 .catalog-button {
     border: none;
-    background-color: #ffffff;
+    background-color: transparent;
     outline: #ffffff;
 }
-.cart .catalog-button {
+.cart h3 {
+    display: flex;
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
     font-weight: bold;
     line-height: 24px;
     color: #000000;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     text-transform: uppercase;
+    width: 130px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
 }
 .cart .catalog-button:active {
     color: #00000030;
 }
 .cart h3::before {
+    display: flex;
     content: "";
     background-color: #f0c52e;
     width: 200px;
     height: 8px;
     position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    z-index: -1;
 }
 .cart:hover h3::before,
 .cart:focus h3::before,
 .cart:active h3::before {
-    width: 200px;
+    display: block;
+    /* width: 200px; */
     height: 40px;
     position: absolute;
 }
@@ -1808,53 +1861,30 @@ a.arrow {
 .match:active .catalog-button {
     color: #00000020;
 }
-.image-1:hover .image-1 {
-    filter: opacity(70%);
-}
-.image-1 .cart,
-.image-1 .match {
+.catalog-item-wrapper .choice {
     display: none;
+    width: 360px;
+    height: 380px;
+    background-color: #ffffff70;
+    margin: 0;
+    margin-top: -380px;    
+    padding: 0;
+    z-index: 4;
+    position: absolute;
+    align-items: center;
 }
-.image-1:hover .cart,
-.image-1:hover .match {
-    display: block;
+.catalog-item-wrapper:hover .choice {
+    display: flex;
+    flex-direction: column;
 }
-.image-2:hover .image-2 {
-    filter: opacity(70%);
+.choice p {
+    margin: 0;
+    padding: 0;
 }
-.image-2 .cart,
-.image-2 .match {
-    display: none;
+.choice .cart {
+    margin-top: 182px;
 }
-.image-2:hover .cart,
-.image-2:hover .match {
-    display: block;
-}
-.image-3:hover .image-3 {
-    filter: opacity(70%);
-}
-.image-3 .cart,
-.image-3 .match {
-    display: none;
-}
-.image-3:hover .cart,
-.image-3:hover .match {
-    display: block;
-}
-.image-4:hover .image-4 {
-    filter: opacity(70%);
-}
-.image-4 .cart,
-.image-4 .match {
-    display: none;
-}
-.image-4:hover .cart,
-.image-4:hover .match {
-    display: block;
-}
-.pagination-list {
-    list-style: none;
-}
+/* Стили для пагинации */
 .pagination-list::before {
     content: " ";
     width: 760px;
@@ -1862,10 +1892,6 @@ a.arrow {
     background-color: #00000008;
     position: absolute;
     z-index: -1;
-}
-.pagination-item {
-    width: 126px;
-    height: 70px;
 }
 .pagination-list .button {
     font-family: "Gilroy", "Arial", sans-serif;
@@ -1879,14 +1905,14 @@ a.arrow {
     width: 126px;
     height: 70px;
 }
-.pagination-list a {
+.pagination-items a {
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 16px;
     font-weight: bold;
     line-height: 24px;
     color: #00000030;
-    width: 126px;
-    height: 70px;
+    /* width: 126px;
+    height: 70px; */
     z-index: 1;
 }
 .pagination-item-current a {
@@ -1905,11 +1931,11 @@ a.arrow {
 .catalog-button-next:active {
     opacity: 30%;
 }
-.pagination-item:hover a,
-.pagination-item:focus a {
+.pagination-items:hover a,
+.pagination-items:focus a {
     color: #00000060;
 }
-.pagination-item:active a {
+.pagination-items:active a {
     color: #000000;
 }
 .pagination-item-current:hover a,
@@ -1917,48 +1943,50 @@ a.arrow {
 .pagination-item-current:active a {
     color: #000000;
 }
-
-/*РАЗМЕЧАЕМ СЕТКУ*/
-
-
+.pagination-list {
+    display: flex;
+    width: 760px;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+.pagination-item {
+    display: flex;
+    width: 160px;
+    height: 17px;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    align-items: center;
+}
 /* Размечаем страницу каталога как Flex */
 .inner-page .container {
+    width: 1160px;
+    min-height: 1430px;
+    margin: 0;
+    padding: 0;
+}
+.inner-page .wrapper {
+    display: flex;
+}
+.inner-page .catalog-container {
     display: flex;
     flex-direction: column;
-    /* margin-left: 199px; */
-    margin-top: -69px;
+    margin-left: 140px;
 }
-.inner-page .page-title-breadcrumbs {
+.inner-page .filter-container {
     display: flex;
-    flex-direction: column;
-    width: 1044px;
-    height: 125px;
-    margin-top: 0px;
-    margin-left: 200px;
-    margin-bottom: 50px;
-    padding: 0px;
-}
-.inner-page .breadcrumbs {
-    display: flex;
-    width: 383px;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-top: 0px;
-    margin-left: 0px;
-    padding-top: 2px;
-    padding-left: 0px;
-}
-.inner-page .container-1 {
-    display: flex;
+    width: 260px;
     align-items: baseline;
 }
 .inner-page .main-filters {
     display: flex;
+    flex-direction: column;
     width: 200px;
-    margin-top: 0px;
-    margin-left: 200px;
-    padding-top: 0px;
-    padding-left: 0px;
+    margin: 0;
+    padding: 0;
+    padding-left: 60px;
     align-items: baseline;
 }
 .inner-page fieldset {
@@ -1966,16 +1994,12 @@ a.arrow {
     margin: 0px;
     padding: 0px;
 }
-.inner-page .container-2 {
+/* .inner-page .filter-2 {
     display: flex;
     width: 760px;
-    min-height: 1190px;
-    flex-direction: column;
-    margin-top: 0px;
-    margin-left: 140px;
-    padding-top: 0px;
-    padding-left: 0px;
-}
+    margin: 0;
+    padding: 0;
+} */
 .inner-page .main-filters-sorting {
     display: flex;
     width: 760px;
@@ -2002,6 +2026,7 @@ a.arrow {
     padding-left: 0px;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 .inner-page .catalog-page {
     display: flex;
@@ -2021,7 +2046,7 @@ a.arrow {
     margin: 0px;
     padding: 0px;
 }
-.inner-page .catalog-item .image-name-price {
+.catalog-item .image-name-price {
     display: flex;
     width: 360px;
     height: 80px;
@@ -2032,22 +2057,7 @@ a.arrow {
     margin: 0px;
     padding: 0px;
 }
-.pagination-list {
-    display: flex;
-    width: 760px;
-    margin: 0px;
-    padding: 0px;
-    justify-content: space-between;
-    align-items: center;
-}
-.pagination-item {
-    display: flex;
-    width: 160px;
-    height: 17px;
-    margin-left: 0px;
-    padding-left: 0px;
-    justify-content: space-around;
-}
+
 
 /* Копипаст. Стили для сокрытия элементов со страницы*/
 
