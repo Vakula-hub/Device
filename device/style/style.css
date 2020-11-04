@@ -14,7 +14,11 @@ body {
     background-position: top left;
     background-repeat: repeat;
 }
-    
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Размечаем Header */
 .main-header {
     max-width: 1160px;
@@ -1552,6 +1556,25 @@ justify-content: space-between;
     font-weight: lighter;
     line-height: 24px;
     color: #00000030;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-right: 40px;
+}
+.breadcrumbs a:after {
+    content: " ";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+    transform: rotate(45deg);
+    right: 20px;
+    top: 6px;
+}
+.breadcrumbs-current a:after {
+    display: none;
 }
 .breadcrumbs a:hover,
 .breadcrumbs a:focus {
@@ -1560,8 +1583,10 @@ justify-content: space-between;
 .breadcrumbs a:active {
     color: #00000010;
 }
+.breadcrumbs-current a,
 .breadcrumbs-current {
     color: #00000030;
+    padding-right: 0px;
 }
 .inner-page .page-title-breadcrumbs {
     width: 1044px;
@@ -1573,8 +1598,10 @@ justify-content: space-between;
 }
 .inner-page .breadcrumbs {
     display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
     width: 383px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: baseline;
     margin: 0;
     padding: 0;
@@ -2120,7 +2147,6 @@ a.arrow {
 .inner-page .main-filters-sorting {
     display: flex;
     width: 760px;
-    height: 17px;
     justify-content: space-between;
     align-items: baseline;
     margin: 0px;
@@ -2150,10 +2176,8 @@ a.arrow {
     width: 760px;
     min-height: 1090px;
     flex-direction: column;
-    margin-top: 99px;
-    margin-left: 0px;
-    padding-top: 0px;
-    padding-left: 0px;
+    margin: 0;
+    padding: 0;
 }
 .inner-page .catalog-list {
     display: flex;
