@@ -72,11 +72,24 @@
                     <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=pricecount.value">
                         <div class="main-filters">
                             <p class="filter">Фильтр:</p>
-                            <fieldset>
+                            <fieldset class="filter-item">
                                 <legend>Стоимость</legend>
-                                    <p>
+                                    <div class="range-filter">
+                                        <div class="range-controls">
+                                            <div class="scale">
+                                                <div class="bar"></div>
+                                            </div>
+                                            <div class="toggle toggle-min"></div>
+                                            <div class="toggle toggle-max"></div>
+                                        </div>
+                                        <div class="price-controls">
+                                            <label class="min-price">от<input name="min-price" type="text" value="0"></label>
+                                            <label class="max-price">до<input name="maxn-price" type="text" value="5000"></label>
+                                        </div>
+                                    </div>
+                                    <!-- <p>
                                         <input type="range" name="priceoutput" min="0" max="100000" step="100">                                
-                                    </p>
+                                    </p> -->
                             </fieldset>        
                             <fieldset>
                                 <legend>Цвет</legend>
@@ -139,6 +152,7 @@
                     <h2 class="visually-hidden">Моноподы для селфи</h2>
                     <ul class="catalog-list">
                         <li class="catalog-item">
+                            <div class="flag flag-new">NEW</div>
                             <div class="catalog-item-wrapper">
                                 <div class="catalog-item-image">
                                     <img src="device\images\item-1.png" width="360" hight="380" alt="Любительская селфи-палка">
@@ -154,6 +168,7 @@
                             </div>
                         </li>
                         <li class="catalog-item">
+                            <div class="flag flag-new visually-hidden">NEW</div>
                             <div class="catalog-item-wrapper">
                                 <div class="catalog-item-image">
                                     <img src="device\images\item-2.png" width="360" hight="380" alt="Профессиональнаяселфи-палка">
@@ -169,6 +184,7 @@
                             </div>
                         </li>
                         <li class="catalog-item">
+                            <div class="flag flag-new visually-hidden">NEW</div>
                             <div class="catalog-item-wrapper">
                                 <div class="catalog-item-image">
                                     <img src="device\images\item-3.png" width="360" hight="380" alt="Непотопляемая селфи-палка">
@@ -184,6 +200,7 @@
                             </div>
                         </li>
                         <li class="catalog-item">
+                            <div class="flag flag-new visually-hidden">NEW</div>
                             <div class="catalog-item-wrapper">
                                 <div class="catalog-item-image">
                                     <img src="device\images\item-4.png" width="360" hight="380" alt="Селфи-палка &#171;Следуй за мной&#187;">
@@ -199,6 +216,7 @@
                                 <p class="catalog-item-price"><b>4900 руб</b></p>
                             </div>
                         </li>
+                        
                     </ul>
                     <ul class="pagination-list">
                         <li><button class="button catalog-button catalog-button-back" type="button">Назад</button></li>
