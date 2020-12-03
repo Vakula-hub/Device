@@ -14,7 +14,7 @@
             isStorageSupport = false;
         }
     
-    link.addEventListener("click", function (evt) {
+        link.addEventListener("click", function (evt) {
         evt.preventDefault();
         console.log ("Клик по ссылке вход");
         popup.classList.add("modal-show");
@@ -52,6 +52,33 @@
             }
             if (overlay.classList.contains("modal-show")) {
                 overlay.classList.remove("modal-show");
+            }
+        }
+    });
+
+    var mapLink = document.querySelector(".big-map");
+    var mapPopup = document.querySelector(".modal-map");
+    var mapOverlay = document.querySelector(".modal-overlay");
+    var mapClose = mapPopup.querySelector(".modal-close");
+
+    mapLink.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.add("modal-show");
+        mapOverlay.classList.add("modal-show");
+    });
+    mapClose.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        mapPopup.classList.remove("modal-show");
+        mapOverlay.classList.remove("modal-show");
+    });
+    window.addEventListener("keydown", function(evt) {
+        if (evt.keyCode === 27) {
+            evt.preventDefault();
+            if (mapPopup.classList.contains("modal-show")) {
+                mapPopup.classList.remove("modal-show");
+            }
+            if (mapOverlay.classList.contains("modal-show")) {
+                mapOverlay.classList.remove("modal-show");
             }
         }
     });
