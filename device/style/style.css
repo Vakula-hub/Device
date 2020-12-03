@@ -1195,14 +1195,13 @@ justify-content: space-between;
     opacity: 0.3;
 }
 
-
 .user-footer-navigation a.login-link {
     display: block;
     position: relative;
     padding-left: 25px;
 }
 .user-footer-navigation a.login-link:before {
-    content: "";
+    content: " ";
     background-image: url("../images/user_yellow.png");
     width: 13px;
     height: 12px;
@@ -1295,6 +1294,39 @@ opacity: 0.6;
     font-weight: bold;
     line-height: 24px;
     position: fixed;
+    display: none;
+    z-index: 5;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #ffffff50;
+    z-index: 4;
+    display: none;
+}
+/* плавно опускаем форму*/
+@keyframes bounce {
+    0% {transform: translateY(-2000px);}
+    70% {transform: translateY(30px);}
+    90% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
+}
+.modal-show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 0.6s;
+}
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(10px);}
+    20%, 40%, 60%, 80% {transform: translateX(-10px);}
+}
+.modal-error {
+    animation-name: shake;
+    animation-duration: 0.6s;
 }
 .modal a {
     color: #000000;
@@ -1303,7 +1335,6 @@ opacity: 0.6;
     font-weight: lighter;
     line-height: 18px;
 }
-
 .modal input {
     border: none;
     background-color: #f2f2f2;
@@ -1322,7 +1353,7 @@ opacity: 0.6;
     background-color: inherit;
     border: none;
     box-shadow: 10px 10px 20px #00000020, -10px 10px 20px #00000020;
-    display: none;
+    /* display: none; */
 }
 .write-us-container {
     display: flex;
@@ -1342,7 +1373,6 @@ opacity: 0.6;
     margin-bottom: 13px;
 }
 .write-us-form textarea {
-    /* display: block; */
     width: 760px;
     height: 156px;
 }
@@ -1375,12 +1405,10 @@ opacity: 0.6;
 }
 .write-us-button::before {
     content: " ";
-    /* display: block; */
     width: 200px;
     height: 8px;
     background-color: #f0c52e;
     position: absolute;
-    /* align-items: center; */
     z-index: -1;
 }
 .write-us-button:hover::before {
@@ -1396,7 +1424,7 @@ opacity: 0.6;
     margin-left: -230px;
     padding: 50px 80px;
     box-shadow: 10px 10px 20px #00000020, -10px 10px 20px #00000020;
-    display: none;
+    /* display: none; */
 }
 .modal-login h2 {
     margin: 0;
@@ -1499,20 +1527,19 @@ opacity: 0.6;
     background-color: transparent;
     letter-spacing: 5px;
     text-transform: uppercase;
+    outline: none;
     border: none;
     margin: 0 50px;
     padding: 0;
     justify-content: center;
     align-items: center;
 }
-.login-form-button:active {
-    color: #00000030;
-}
 .login-form-button::before {
     content: " ";
     width: 200px;
     height: 8px;
     background-color: #f0c52e;
+    border: none;
     position: absolute;
     margin: 0;
     padding: 0;
@@ -1522,8 +1549,12 @@ opacity: 0.6;
 }
 .login-form-button:hover::before {
     height: 40px;
+    border: none;
 }
-
+.login-form-button:active {
+    color: #00000030;
+    
+}
 /*СТИЛИЗАЦИЯ КНОПКИ ЗАКРЫТИЯ*/
 .modal-close {
     position: absolute;
@@ -1536,6 +1567,7 @@ opacity: 0.6;
     border: 0px;
     border-radius: 50%;
     cursor: pointer;
+    z-index: 3;
 }
 .modal-close:hover {
     background-color: #f0c52e;
@@ -1564,18 +1596,25 @@ opacity: 0.6;
 .modal-map {
     top: 50%;
     left: 50%;
-  
     width: 960px;
     height: 560px;
     margin-top: -280px;
     margin-left: -480px;
-    
     border: 7px solid white;
-    
-    display: none;
+    z-index: 5;    
+}
+.modal-map iframe {
+    position: relative;
+    z-index: 2;
+    border: none;
 }
 .modal-map p {
     margin: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 /* Стилизация Каталога */
@@ -2063,7 +2102,7 @@ a.arrow {
     margin: 0;
     padding: 0;
 }
-.catalog-item {
+.catalog-list .catalog-item {
     position: relative;
     display: inline-block;
     width: 360px;
