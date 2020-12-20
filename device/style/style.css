@@ -282,13 +282,13 @@ input:-webkit-autofill:active {
 }
     
 /* делаем выпадающее меню */
-li.catalog ul.submenu {
+li.catalog div.submenu {
     display: none;
 }
-li.catalog:hover ul.submenu {
+li.catalog:hover div.submenu {
     display: flex;
 }
-li.catalog ul.submenu {
+li.catalog div.submenu {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 15px;
     font-weight: lighter;
