@@ -1718,7 +1718,7 @@ opacity: 0.6;
     background-color: #00000008;
     width: 1445px;
     height: 70px;
-    margin-left: -120;
+    margin-left: -120px;
     position: absolute;
     z-index: -1;
 }
@@ -1786,7 +1786,7 @@ p.filter {
     position: relative;
     /* height: 40px; */
     background-color: transparent;
-    margin-bottom: 15;
+    margin-bottom: 15px;
     padding-top: 38px;
 }
 .range-controls .scale {
@@ -1974,7 +1974,7 @@ p.filter {
     border: none;
     background-color: transparent;
 }
-.filter-button h3 {
+.filter-button {
     display: flex;
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
@@ -1990,7 +1990,7 @@ p.filter {
     justify-content: center;
     align-items: center;
 }
-.filter-button h3::before {
+.filter-button::before {
     display: block;
     content: " ";
     background-color: #f0c52e;
@@ -2003,7 +2003,7 @@ p.filter {
     align-items: center;
     z-index: -1;
 }
-.filter-button:hover h3::before {
+.filter-button:hover::before {
     display: block;
     height: 40px;
 }
@@ -2140,7 +2140,7 @@ a.arrow {
     background-color: transparent;
     outline: #ffffff;
 }
-.cart h3 {
+.cart .catalog-button {
     display: flex;
     font-family: "Gilroy", "Arial", sans-serif;
     font-size: 18px;
@@ -2159,7 +2159,7 @@ a.arrow {
 .cart .catalog-button:active {
     color: #00000030;
 }
-.cart h3::before {
+.cart .catalog-button::before {
     display: flex;
     content: "";
     background-color: #f0c52e;
@@ -2172,9 +2172,9 @@ a.arrow {
     padding: 0;
     z-index: -1;
 }
-.cart:hover h3::before,
-.cart:focus h3::before,
-.cart:active h3::before {
+.cart:hover .catalog-button::before,
+.cart:focus .catalog-button::before,
+.cart:active .catalog-button::before {
     display: block;
     /* width: 200px; */
     height: 40px;
