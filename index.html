@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <title>Проект Device из HTML Academy</title>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-        <link href="device\style\style.css" rel="stylesheet">
-        <link href="device\style\normalize.css" rel="stylesheet">
+        <link href="device/style/normalize.css" rel="stylesheet">
+        <link href="device/style/style.css" rel="stylesheet">
+        
     </head>
 <body>
     <header class="main-header">
         <a class="main-header-logo">
-            <img src="device\images\index-logo.png" width="168" height="35" alt="Логотип Device">
+            <img src="device/images/index-logo.png" width="168" height="35" alt="Логотип Device">
         </a>
         <nav class="main-navigation">
             <div class="user-navigation">
@@ -33,20 +34,20 @@
                         <a class="catalog" href="index-catalog.html">Каталог товаров</a>
                     <!-- Здесь должно быть выпадающее меню   -->
                         <div class="submenu-container">
-                            <ul class="submenu">
-                                <div class="block-1">
+                            <div class="submenu">
+                                <ul class="block-1">
                                     <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
                                     <li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
                                     <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
-                                </div>
-                                <div class="block-2">
+                                </ul>
+                                <ul class="block-2">
                                     <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
                                     <li class="catalog-item"><a href="#">Умные часы</a></li>
-                                </div>
-                                <div class="block-3">
+                                </ul>
+                                <ul class="block-3">
                                     <li class="catalog-item"><a href="#">Квадракоптеры</a></li>
-                                </div>
-                            </ul>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li class="delivery"><a class="delivery" href="delivery.html">Доставка</a></li>
@@ -73,7 +74,7 @@
                 </div>
                 <div class="slide" id="slider1">
                     <div class="image">
-                        <img src="device\images\slider-1.png" width="384" height="486" alt="палка для селфи">
+                        <img src="device/images/slider-1.png" width="384" height="486" alt="палка для селфи">
                     </div>
                     <div class="info">
                         <p class="slide-number">01</p>
@@ -101,7 +102,7 @@
                 </div>
                 <div class="slide" id="slider2">
                     <div class="image">
-                        <img src="device\images\slider-2.png" width="345" height="485"
+                        <img src="device/images/slider-2.png" width="345" height="485"
                         alt="фитнес браслет">
                     </div>
                     <div class="info">
@@ -126,7 +127,7 @@
                 </div>
                 <div class="slide" id="slider3">
                     <div class="image">
-                        <img src="device\images\slider-3.png" alt="квадракоптер" width="526" height="325">
+                        <img src="device/images/slider-3.png" alt="квадракоптер" width="526" height="325">
                     </div>
                     <div class="info">
                         <p class="slide-number">03</p>
@@ -170,25 +171,25 @@
                 </li>
                 <li class="popular-item-3">
                     <a class="image" href="#">
-                        <img src="device/svg/popular-3.svg" title="Экшн-камеры" weight="71px" height="87px" alt="Экшн-камеры">
+                        <img src="device/svg/popular-3.svg" title="Экшн-камеры" width="71" height="87" alt="Экшн-камеры">
                     </a>
                     <p class="name"><a class="name" href="#">Экшн-камеры</a></p>
                 </li>
                 <li class="popular-item-4">
                     <a class="image" href="#">
-                        <img src="device/svg/popular-4.svg" title="Фитнес-браслеты" weight="107" height="65" alt="Фитнес-браслеты">
+                        <img src="device/svg/popular-4.svg" title="Фитнес-браслеты" width="107" height="65" alt="Фитнес-браслеты">
                     </a>
                     <p class="name"><a class="name" href="#">Фитнес-браслеты</a></p>
                 </li>
                     <li class="popular-item-5">
                     <a class="image" href="#">
-                        <img src="device/svg/popular-5.svg" title="Умные часы" weight="56" height="98" alt="Умные часы">
+                        <img src="device/svg/popular-5.svg" title="Умные часы" width="56" height="98" alt="Умные часы">
                     </a>
                     <p class="name"><a class="name" href="#">Умные часы</a></p>
                 </li>
                 <li class="popular-item-6">
                     <a class="image" href="#">
-                        <img src="device/svg/poppular-6.svg" title="Квадракоптеры" weight="132" height="69" alt="Квадракоптеры">
+                        <img src="device/svg/poppular-6.svg" title="Квадракоптеры" width="132" height="69" alt="Квадракоптеры">
                     </a>
                     <p class="name"><a class="name" href="#">Квадракоптеры</a></p>
                 </li>
@@ -198,14 +199,14 @@
         
         <div class="service-wrapper">
                 <h2 class="visually-hidden">Сервис</h2>
-                <input class="visually-hidden" type="radio" id="service1" name="toggle"checked>
+                <input class="visually-hidden" type="radio" id="service1" name="toggle" checked>
                 <input class="visually-hidden" type="radio" id="service2" name="toggle">
                 <input class="visually-hidden" type="radio" id="service3" name="toggle">
             <section class="service">
                 <div class="service-list">
-                    <label class="service-item delivery" for="service1"><h3>Доставка</h3></label>
-                    <label class="service-item warranty" for="service2"><h3>Гарантия</h3></label>
-                    <label class="service-item credit" for="service3"><h3>Кредит</h3></label>
+                    <h3 class="service-item delivery"><label for="service1">Доставка</label></h3>
+                    <h3 class="service-item warranty"><label for="service2">Гарантия</label></h3>
+                    <h3 class="service-item credit"><label for="service3">Кредит</label></h3>
                 </div> 
                 <div class="service-flex">
                     <div class="service-block delivery" id="delivery">
@@ -217,7 +218,7 @@
                             </p>
                         </div>
                         <p class="image">
-                            <img src="device\svg\delivery.svg" width="136" height="164" alt="Доставка">
+                            <img src="device/svg/delivery.svg" width="136" height="164" alt="Доставка">
                         </p>
                     </div>
                     <div class="service-block warranty" id="warranty">
@@ -229,7 +230,7 @@
                             </p>
                         </div>
                         <p class="image">
-                        <img src="device\svg\warranty.svg" width="171" hight="195" alt="Гарантия">
+                        <img src="device/svg/warranty.svg" width="171" height="195" alt="Гарантия">
                         </p>
                     </div>
                     <div class="service-block credit" id="credit">
@@ -241,7 +242,7 @@
                             </p>
                         </div>
                         <p class="image">
-                        <img src="device\svg\credit.svg" width="156" height="188" alt="кредит">
+                        <img src="device/svg/credit.svg" width="156" height="188" alt="кредит">
                         </p>
                     </div>
                 </div>
@@ -249,11 +250,12 @@
         </div>
         
         <section class="partners-logo"> <!-- Разметил Флексом 21.07.20 --> 
+            <h2 class="visually-hidden">Партнеры</h2>
             <ul class="logo">
-                <li class="logo-1"><img src="device\images\logo-1.png" width="260" height="100" alt="Логотип DJI"></li>
-                <li class="logo-2"><img src="device\images\logo-2.png" width="260" height="100" alt="Логотип SpGadgets"></li>
-                <li class="logo-3"><img src="device\images\logo-3.png" width="260" height="100" alt="Логотип GoPro"></li>
-                <li class="logo-4"><img src="device\images\logo-4.png" width="260" height="100" alt="Логотип Vive"></li>
+                <li class="logo-1"><img src="device/images/logo-1.png" width="260" height="100" alt="Логотип DJI"></li>
+                <li class="logo-2"><img src="device/images/logo-2.png" width="260" height="100" alt="Логотип SpGadgets"></li>
+                <li class="logo-3"><img src="device/images/logo-3.png" width="260" height="100" alt="Логотип GoPro"></li>
+                <li class="logo-4"><img src="device/images/logo-4.png" width="260" height="100" alt="Логотип Vive"></li>
             </ul>
         </section>
         <div class="company-information">
@@ -280,7 +282,7 @@
                 <h2>Контакты</h2>
                 <p class="text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                 <p class="image">
-                    <a class="big-map" href="map.html"><img src="device\images\map.jpg" width="560" hight="222" alt="Карта проезда"></a>
+                    <a class="big-map" href="map.html"><img src="device/images/map.jpg" width="560" height="222" alt="Карта проезда"></a>
                 </p>
                 <div class="details contacts-form">
                     <a class="button write-us" href="contacts.html">Напишите нам</a>
@@ -292,7 +294,7 @@
     <footer class="main-footer">
         <div class="first-column">
             <a class="main-footer-logo" href="index.html">
-            <img src="device\images\logo-footer.png" width="166px" height="35px" alt="Логотип Device">
+            <img src="device/images/logo-footer.png" width="166" height="35" alt="Логотип Device">
             </a>
             <p class="footer-contact-adress">г. Москва, ул. Строителей, 15</p>
         </div>
@@ -359,27 +361,26 @@
         
             <form class="write-us-form" action="#" method="GET">
                 <div class="write-us-container">
-                <p>
-                    <span>Ваше имя</span>
-                    <label class="visually-hidden" for="user-field-id">Ваше имя:</label>
-                    <input id="user-field-id" type="text" name="username" placeholder="Имя Фамилия">
-                </p> 
-                <p>
-                    <span>Ваш email:</span>
-                    <label class="visually-hidden" for="user-mail-id">Ваш email:</label>
-                    <input id="user-mail-id" type="text" name="usermail" placeholder="email@example.com">
-                </p>
-                <p>
-                    <span>Текст письма</span>
-                    <label class="visually-hidden" for="user-letter-id">Текст письма:</label>
-                    <textarea id="user-letter-id" type="text" name="user-letter" placeholder="В свободной форме"></textarea>
-                </p>
+                    <p>
+                        <span>Ваше имя</span>
+                        <label class="visually-hidden" for="user-field-id">Ваше имя:</label>
+                        <input id="user-field-id" type="text" name="username" placeholder="Имя Фамилия">
+                    </p> 
+                    <p>
+                        <span>Ваш email:</span>
+                        <label class="visually-hidden" for="user-mail-id">Ваш email:</label>
+                        <input id="user-mail-id" type="text" name="usermail" placeholder="email@example.com">
+                    </p>
+                    <p>
+                        <span>Текст письма</span>
+                        <label class="visually-hidden" for="user-letter-id">Текст письма:</label>
+                        <textarea id="user-letter-id" name="user-letter" placeholder="В свободной форме"></textarea>
+                    </p>
                 </div>
                 <button class="write-us-button" type="submit">Отправить</button>
             </form>
            <!-- Здесь будет форма -->
            <button class="modal-close" type="button">Закрыть</button>
-        </div>
         </section>
         
         <section class="modal modal-compare">
@@ -399,7 +400,7 @@
             <h2 class="visually-hidden">Как до нас добраться</h2>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.096199439885!2d37.527343485239584!3d55.68731523477969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5MzEx!5e0!3m2!1sru!2sua!4v1606973421969!5m2!1sru!2sua" width="960" height="560" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <p>
-                <img src="./device/images/map-big.jpg" width="960" hight="560" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
+                <img src="./device/images/map-big.jpg" width="960" height="560" alt="Офис компании по адресу г. Москва, ул. Строителей, 15">
             </p>
             <button class="modal-close" type="button">Закрыть</button>
         </section>
