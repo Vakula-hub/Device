@@ -615,6 +615,17 @@ li.catalog div.submenu {
   height: 388px;
   margin-bottom: 94px;
 }
+.service-wrapper::before {
+  content: " ";
+  display: inline-block;
+  background-color: #e5e5e5;
+  position: absolute;
+  width: 123vw;
+  height: 288px;
+  left: 0;
+  margin-top: 100px;
+  z-index: -1;
+}
 .service-list {
   list-style: none;
 }
@@ -658,17 +669,7 @@ li.catalog div.submenu {
   margin-left: 280px;
   margin-top: -90px;
 }
-.service::before {
-  content: " ";
-  background-color: #e5e5e5;
-  position: absolute;
-  width: 100vw;
-  height: 288px;
-  left: 0;
-  margin-top: 100px;
-  padding: 0;
-  z-index: -1;
-}
+
 .service {
   display: flex;
   margin: 0;
@@ -1000,7 +1001,7 @@ li.catalog div.submenu {
 }
 .main-footer::before {
   content: "";
-  width: 100vw;
+  width: 123vw;
   height: 323px;
   background-color: #464646;
   position: absolute;
