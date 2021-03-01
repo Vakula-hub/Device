@@ -606,6 +606,17 @@ li.catalog:hover div.submenu {
   height: 388px;
   margin: 0 0 94px;
 }
+.service-wrapper::before {
+  content: " ";
+  display: inline-block;
+  background-color: #e5e5e5;
+  position: absolute;
+  width: 123vw;
+  height: 288px;
+  left: 0;
+  margin-top: 100px;
+  z-index: -1;
+}
 .service h2,
 .service-list {
   font-family: "Gilroy", "Arial", sans-serif;
@@ -623,16 +634,13 @@ li.catalog:hover div.submenu {
   line-height: 48px;
   color: #000;
 }
-.service-item::before,
-.service::before {
-  content: " ";
-  position: absolute;
-  z-index: -1;
-}
 .service-item::before {
+  content: " ";
   background-color: #f0c52e;
+  position: absolute;
   width: 160px;
   height: 8px;
+  z-index: -1;
 }
 .service-item:hover::before {
   height: 40px;
@@ -648,14 +656,6 @@ li.catalog:hover div.submenu {
   position: absolute;
   padding: 0;
   margin: -90px 0 0 280px;
-}
-.service::before {
-  background-color: #e5e5e5;
-  width: 100vw;
-  height: 288px;
-  left: 0;
-  margin-top: 100px;
-  padding: 0;
 }
 .service {
   display: flex;
@@ -939,7 +939,7 @@ li.catalog:hover div.submenu {
 }
 .main-footer::before {
   content: "";
-  width: 100vw;
+  width: 123vw;
   height: 323px;
   background-color: #464646;
   position: absolute;
